@@ -1,0 +1,126 @@
+
+sdram.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00000000 <.data>:
+   0:	eb000005 	bl	0x1c
+   4:	eb000010 	bl	0x4c
+   8:	eb000007 	bl	0x2c
+   c:	e59ff090 	ldr	pc, [pc, #144]	; 0xa4
+  10:	e3a0d30d 	mov	sp, #872415232	; 0x34000000
+  14:	eb000023 	bl	0xa8
+  18:	eafffffe 	b	0x18
+  1c:	e3a01453 	mov	r1, #1392508928	; 0x53000000
+  20:	e3a02000 	mov	r2, #0
+  24:	e5812000 	str	r2, [r1]
+  28:	e1a0f00e 	mov	pc, lr
+  2c:	e3a01000 	mov	r1, #0
+  30:	e3a02203 	mov	r2, #805306368	; 0x30000000
+  34:	e3a03a01 	mov	r3, #4096	; 0x1000
+  38:	e4914004 	ldr	r4, [r1], #4
+  3c:	e4824004 	str	r4, [r2], #4
+  40:	e1510003 	cmp	r1, r3
+  44:	1afffffb 	bne	0x38
+  48:	e1a0f00e 	mov	pc, lr
+  4c:	e3a01312 	mov	r1, #1207959552	; 0x48000000
+  50:	e28f2018 	add	r2, pc, #24
+  54:	e1a00000 	nop			; (mov r0, r0)
+  58:	e2813034 	add	r3, r1, #52	; 0x34
+  5c:	e4924004 	ldr	r4, [r2], #4
+  60:	e4814004 	str	r4, [r1], #4
+  64:	e1510003 	cmp	r1, r3
+  68:	1afffffb 	bne	0x5c
+  6c:	e1a0f00e 	mov	pc, lr
+  70:	22011110 	andcs	r1, r1, #16, 2
+  74:	00000700 	andeq	r0, r0, r0, lsl #14
+  78:	00000700 	andeq	r0, r0, r0, lsl #14
+  7c:	00000700 	andeq	r0, r0, r0, lsl #14
+  80:	00000700 	andeq	r0, r0, r0, lsl #14
+  84:	00000700 	andeq	r0, r0, r0, lsl #14
+  88:	00000700 	andeq	r0, r0, r0, lsl #14
+  8c:	00018005 	andeq	r8, r1, r5
+  90:	00018005 	andeq	r8, r1, r5
+  94:	008c07a3 	addeq	r0, ip, r3, lsr #15
+  98:	000000b1 	strheq	r0, [r0], -r1
+  9c:	00000030 	andeq	r0, r0, r0, lsr r0
+  a0:	00000030 	andeq	r0, r0, r0, lsr r0
+  a4:	30000010 	andcc	r0, r0, r0, lsl r0
+  a8:	e52db004 	push	{fp}		; (str fp, [sp, #-4]!)
+  ac:	e28db000 	add	fp, sp, #0
+  b0:	e24dd00c 	sub	sp, sp, #12
+  b4:	e59f3110 	ldr	r3, [pc, #272]	; 0x1cc
+  b8:	e3a02b55 	mov	r2, #87040	; 0x15400
+  bc:	e5832000 	str	r2, [r3]
+  c0:	e59f3108 	ldr	r3, [pc, #264]	; 0x1d0
+  c4:	e3e02000 	mvn	r2, #0
+  c8:	e5832000 	str	r2, [r3]
+  cc:	e59f3100 	ldr	r3, [pc, #256]	; 0x1d4
+  d0:	e5933000 	ldr	r3, [r3]
+  d4:	e50b3008 	str	r3, [fp, #-8]
+  d8:	e51b3008 	ldr	r3, [fp, #-8]
+  dc:	e2033001 	and	r3, r3, #1
+  e0:	e3530000 	cmp	r3, #0
+  e4:	0a000005 	beq	0x100
+  e8:	e59f20e8 	ldr	r2, [pc, #232]	; 0x1d8
+  ec:	e59f30e4 	ldr	r3, [pc, #228]	; 0x1d8
+  f0:	e5933000 	ldr	r3, [r3]
+  f4:	e3833020 	orr	r3, r3, #32
+  f8:	e5823000 	str	r3, [r2]
+  fc:	ea000004 	b	0x114
+ 100:	e59f20d0 	ldr	r2, [pc, #208]	; 0x1d8
+ 104:	e59f30cc 	ldr	r3, [pc, #204]	; 0x1d8
+ 108:	e5933000 	ldr	r3, [r3]
+ 10c:	e3c33020 	bic	r3, r3, #32
+ 110:	e5823000 	str	r3, [r2]
+ 114:	e51b3008 	ldr	r3, [fp, #-8]
+ 118:	e2033008 	and	r3, r3, #8
+ 11c:	e3530000 	cmp	r3, #0
+ 120:	0a000005 	beq	0x13c
+ 124:	e59f20ac 	ldr	r2, [pc, #172]	; 0x1d8
+ 128:	e59f30a8 	ldr	r3, [pc, #168]	; 0x1d8
+ 12c:	e5933000 	ldr	r3, [r3]
+ 130:	e3833040 	orr	r3, r3, #64	; 0x40
+ 134:	e5823000 	str	r3, [r2]
+ 138:	ea000004 	b	0x150
+ 13c:	e59f2094 	ldr	r2, [pc, #148]	; 0x1d8
+ 140:	e59f3090 	ldr	r3, [pc, #144]	; 0x1d8
+ 144:	e5933000 	ldr	r3, [r3]
+ 148:	e3c33040 	bic	r3, r3, #64	; 0x40
+ 14c:	e5823000 	str	r3, [r2]
+ 150:	e51b3008 	ldr	r3, [fp, #-8]
+ 154:	e2033020 	and	r3, r3, #32
+ 158:	e3530000 	cmp	r3, #0
+ 15c:	0a000005 	beq	0x178
+ 160:	e59f2070 	ldr	r2, [pc, #112]	; 0x1d8
+ 164:	e59f306c 	ldr	r3, [pc, #108]	; 0x1d8
+ 168:	e5933000 	ldr	r3, [r3]
+ 16c:	e3833080 	orr	r3, r3, #128	; 0x80
+ 170:	e5823000 	str	r3, [r2]
+ 174:	ea000004 	b	0x18c
+ 178:	e59f2058 	ldr	r2, [pc, #88]	; 0x1d8
+ 17c:	e59f3054 	ldr	r3, [pc, #84]	; 0x1d8
+ 180:	e5933000 	ldr	r3, [r3]
+ 184:	e3c33080 	bic	r3, r3, #128	; 0x80
+ 188:	e5823000 	str	r3, [r2]
+ 18c:	e51b3008 	ldr	r3, [fp, #-8]
+ 190:	e2033040 	and	r3, r3, #64	; 0x40
+ 194:	e3530000 	cmp	r3, #0
+ 198:	0a000005 	beq	0x1b4
+ 19c:	e59f2034 	ldr	r2, [pc, #52]	; 0x1d8
+ 1a0:	e59f3030 	ldr	r3, [pc, #48]	; 0x1d8
+ 1a4:	e5933000 	ldr	r3, [r3]
+ 1a8:	e3833c01 	orr	r3, r3, #256	; 0x100
+ 1ac:	e5823000 	str	r3, [r2]
+ 1b0:	eaffffc5 	b	0xcc
+ 1b4:	e59f201c 	ldr	r2, [pc, #28]	; 0x1d8
+ 1b8:	e59f3018 	ldr	r3, [pc, #24]	; 0x1d8
+ 1bc:	e5933000 	ldr	r3, [r3]
+ 1c0:	e3c33c01 	bic	r3, r3, #256	; 0x100
+ 1c4:	e5823000 	str	r3, [r2]
+ 1c8:	eaffffbf 	b	0xcc
+ 1cc:	56000010 			; <UNDEFINED> instruction: 0x56000010
+ 1d0:	56000060 	strpl	r0, [r0], -r0, rrx
+ 1d4:	56000064 	strpl	r0, [r0], -r4, rrx
+ 1d8:	56000014 			; <UNDEFINED> instruction: 0x56000014
