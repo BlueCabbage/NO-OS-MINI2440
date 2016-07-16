@@ -1,0 +1,90 @@
+
+button_c.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00000000 <.data>:
+   0:	e3a00453 	mov	r0, #1392508928	; 0x53000000
+   4:	e3a01000 	mov	r1, #0
+   8:	e5801000 	str	r1, [r0]
+   c:	e3a0da01 	mov	sp, #4096	; 0x1000
+  10:	eb000000 	bl	0x18
+  14:	eafffffe 	b	0x14
+  18:	e52db004 	push	{fp}		; (str fp, [sp, #-4]!)
+  1c:	e28db000 	add	fp, sp, #0
+  20:	e24dd00c 	sub	sp, sp, #12
+  24:	e59f3110 	ldr	r3, [pc, #272]	; 0x13c
+  28:	e3a02b55 	mov	r2, #87040	; 0x15400
+  2c:	e5832000 	str	r2, [r3]
+  30:	e59f3108 	ldr	r3, [pc, #264]	; 0x140
+  34:	e3e02000 	mvn	r2, #0
+  38:	e5832000 	str	r2, [r3]
+  3c:	e59f3100 	ldr	r3, [pc, #256]	; 0x144
+  40:	e5933000 	ldr	r3, [r3]
+  44:	e50b3008 	str	r3, [fp, #-8]
+  48:	e51b3008 	ldr	r3, [fp, #-8]
+  4c:	e2033001 	and	r3, r3, #1
+  50:	e3530000 	cmp	r3, #0
+  54:	0a000005 	beq	0x70
+  58:	e59f20e8 	ldr	r2, [pc, #232]	; 0x148
+  5c:	e59f30e4 	ldr	r3, [pc, #228]	; 0x148
+  60:	e5933000 	ldr	r3, [r3]
+  64:	e3833020 	orr	r3, r3, #32
+  68:	e5823000 	str	r3, [r2]
+  6c:	ea000004 	b	0x84
+  70:	e59f20d0 	ldr	r2, [pc, #208]	; 0x148
+  74:	e59f30cc 	ldr	r3, [pc, #204]	; 0x148
+  78:	e5933000 	ldr	r3, [r3]
+  7c:	e3c33020 	bic	r3, r3, #32
+  80:	e5823000 	str	r3, [r2]
+  84:	e51b3008 	ldr	r3, [fp, #-8]
+  88:	e2033008 	and	r3, r3, #8
+  8c:	e3530000 	cmp	r3, #0
+  90:	0a000005 	beq	0xac
+  94:	e59f20ac 	ldr	r2, [pc, #172]	; 0x148
+  98:	e59f30a8 	ldr	r3, [pc, #168]	; 0x148
+  9c:	e5933000 	ldr	r3, [r3]
+  a0:	e3833040 	orr	r3, r3, #64	; 0x40
+  a4:	e5823000 	str	r3, [r2]
+  a8:	ea000004 	b	0xc0
+  ac:	e59f2094 	ldr	r2, [pc, #148]	; 0x148
+  b0:	e59f3090 	ldr	r3, [pc, #144]	; 0x148
+  b4:	e5933000 	ldr	r3, [r3]
+  b8:	e3c33040 	bic	r3, r3, #64	; 0x40
+  bc:	e5823000 	str	r3, [r2]
+  c0:	e51b3008 	ldr	r3, [fp, #-8]
+  c4:	e2033020 	and	r3, r3, #32
+  c8:	e3530000 	cmp	r3, #0
+  cc:	0a000005 	beq	0xe8
+  d0:	e59f2070 	ldr	r2, [pc, #112]	; 0x148
+  d4:	e59f306c 	ldr	r3, [pc, #108]	; 0x148
+  d8:	e5933000 	ldr	r3, [r3]
+  dc:	e3833080 	orr	r3, r3, #128	; 0x80
+  e0:	e5823000 	str	r3, [r2]
+  e4:	ea000004 	b	0xfc
+  e8:	e59f2058 	ldr	r2, [pc, #88]	; 0x148
+  ec:	e59f3054 	ldr	r3, [pc, #84]	; 0x148
+  f0:	e5933000 	ldr	r3, [r3]
+  f4:	e3c33080 	bic	r3, r3, #128	; 0x80
+  f8:	e5823000 	str	r3, [r2]
+  fc:	e51b3008 	ldr	r3, [fp, #-8]
+ 100:	e2033040 	and	r3, r3, #64	; 0x40
+ 104:	e3530000 	cmp	r3, #0
+ 108:	0a000005 	beq	0x124
+ 10c:	e59f2034 	ldr	r2, [pc, #52]	; 0x148
+ 110:	e59f3030 	ldr	r3, [pc, #48]	; 0x148
+ 114:	e5933000 	ldr	r3, [r3]
+ 118:	e3833c01 	orr	r3, r3, #256	; 0x100
+ 11c:	e5823000 	str	r3, [r2]
+ 120:	eaffffc5 	b	0x3c
+ 124:	e59f201c 	ldr	r2, [pc, #28]	; 0x148
+ 128:	e59f3018 	ldr	r3, [pc, #24]	; 0x148
+ 12c:	e5933000 	ldr	r3, [r3]
+ 130:	e3c33c01 	bic	r3, r3, #256	; 0x100
+ 134:	e5823000 	str	r3, [r2]
+ 138:	eaffffbf 	b	0x3c
+ 13c:	56000010 			; <UNDEFINED> instruction: 0x56000010
+ 140:	56000060 	strpl	r0, [r0], -r0, rrx
+ 144:	56000064 	strpl	r0, [r0], -r4, rrx
+ 148:	56000014 			; <UNDEFINED> instruction: 0x56000014

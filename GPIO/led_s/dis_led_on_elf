@@ -1,0 +1,95 @@
+
+led_on_elf:     file format elf32-littlearm
+
+
+Disassembly of section .text:
+
+00000000 <_start>:
+   0:	e59f0014 	ldr	r0, [pc, #20]	; 1c <MAIN_LOOP+0x4>
+   4:	e3a01b55 	mov	r1, #87040	; 0x15400
+   8:	e5801000 	str	r1, [r0]
+   c:	e59f000c 	ldr	r0, [pc, #12]	; 20 <MAIN_LOOP+0x8>
+  10:	e3a01000 	mov	r1, #0
+  14:	e5801000 	str	r1, [r0]
+
+00000018 <MAIN_LOOP>:
+  18:	eafffffe 	b	18 <MAIN_LOOP>
+  1c:	56000010 			; <UNDEFINED> instruction: 0x56000010
+  20:	56000014 			; <UNDEFINED> instruction: 0x56000014
+
+Disassembly of section .debug_aranges:
+
+00000000 <.debug_aranges>:
+   0:	0000001c 	andeq	r0, r0, ip, lsl r0
+   4:	00000002 	andeq	r0, r0, r2
+   8:	00040000 	andeq	r0, r4, r0
+	...
+  14:	00000024 	andeq	r0, r0, r4, lsr #32
+	...
+
+Disassembly of section .debug_info:
+
+00000000 <.debug_info>:
+   0:	0000005e 	andeq	r0, r0, lr, asr r0
+   4:	00000002 	andeq	r0, r0, r2
+   8:	01040000 	mrseq	r0, (UNDEF: 4)
+	...
+  14:	00000024 	andeq	r0, r0, r4, lsr #32
+  18:	5f64656c 	svcpl	0x0064656c
+  1c:	532e6e6f 			; <UNDEFINED> instruction: 0x532e6e6f
+  20:	6f682f00 	svcvs	0x00682f00
+  24:	7a2f656d 	bvc	bd95e0 <_stack+0xb595e0>
+  28:	636f6168 	cmnvs	pc, #104, 2
+  2c:	2f6f6168 	svccs	0x006f6168
+  30:	6b736544 	blvs	1cd9548 <_stack+0x1c59548>
+  34:	2f706f74 	svccs	0x00706f74
+  38:	6f2d6f6e 	svcvs	0x002d6f6e
+  3c:	696d2d73 	stmdbvs	sp!, {r0, r1, r4, r5, r6, r8, sl, fp, sp}^
+  40:	3432696e 	ldrtcc	r6, [r2], #-2414	; 0xfffff692
+  44:	472f3034 			; <UNDEFINED> instruction: 0x472f3034
+  48:	2f4f4950 	svccs	0x004f4950
+  4c:	5f64656c 	svcpl	0x0064656c
+  50:	4e470073 	mcrmi	0, 2, r0, cr7, cr3, {3}
+  54:	53412055 	movtpl	r2, #4181	; 0x1055
+  58:	322e3220 	eorcc	r3, lr, #32, 4
+  5c:	00302e36 	eorseq	r2, r0, r6, lsr lr
+  60:	Address 0x0000000000000060 is out of bounds.
+
+
+Disassembly of section .debug_abbrev:
+
+00000000 <.debug_abbrev>:
+   0:	10001101 	andne	r1, r0, r1, lsl #2
+   4:	12011106 	andne	r1, r1, #-2147483647	; 0x80000001
+   8:	1b080301 	blne	200c14 <_stack+0x180c14>
+   c:	13082508 	movwne	r2, #34056	; 0x8508
+  10:	00000005 	andeq	r0, r0, r5
+
+Disassembly of section .debug_line:
+
+00000000 <.debug_line>:
+   0:	0000003c 	andeq	r0, r0, ip, lsr r0
+   4:	001f0002 	andseq	r0, pc, r2
+   8:	01020000 	mrseq	r0, (UNDEF: 2)
+   c:	000d0efb 	strdeq	r0, [sp], -fp
+  10:	01010101 	tsteq	r1, r1, lsl #2
+  14:	01000000 	mrseq	r0, (UNDEF: 0)
+  18:	00010000 	andeq	r0, r1, r0
+  1c:	5f64656c 	svcpl	0x0064656c
+  20:	532e6e6f 			; <UNDEFINED> instruction: 0x532e6e6f
+  24:	00000000 	andeq	r0, r0, r0
+  28:	02050000 	andeq	r0, r5, #0
+  2c:	00000000 	andeq	r0, r0, r0
+  30:	2f2f2f17 	svccs	0x002f2f17
+  34:	03312f2f 	teqeq	r1, #47, 30	; 0xbc
+  38:	02312e78 	eorseq	r2, r1, #120, 28	; 0x780
+  3c:	01010002 	tsteq	r1, r2
+
+Disassembly of section .ARM.attributes:
+
+00000000 <_stack-0x80000>:
+   0:	00001341 	andeq	r1, r0, r1, asr #6
+   4:	61656100 	cmnvs	r5, r0, lsl #2
+   8:	01006962 	tsteq	r0, r2, ror #18
+   c:	00000009 	andeq	r0, r0, r9
+  10:	01080106 	tsteq	r8, r6, lsl #2

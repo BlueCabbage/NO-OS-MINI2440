@@ -1,0 +1,16 @@
+
+led_on.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00000000 <.data>:
+   0:	e59f0014 	ldr	r0, [pc, #20]	; 0x1c
+   4:	e3a01b55 	mov	r1, #87040	; 0x15400
+   8:	e5801000 	str	r1, [r0]
+   c:	e59f000c 	ldr	r0, [pc, #12]	; 0x20
+  10:	e3a01000 	mov	r1, #0
+  14:	e5801000 	str	r1, [r0]
+  18:	eafffffe 	b	0x18
+  1c:	56000010 			; <UNDEFINED> instruction: 0x56000010
+  20:	56000014 			; <UNDEFINED> instruction: 0x56000014
