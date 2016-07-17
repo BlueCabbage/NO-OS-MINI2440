@@ -1,0 +1,116 @@
+
+int.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00000000 <.data>:
+   0:	eafffffe 	b	0x0
+   4:	ea000006 	b	0x24
+   8:	eafffffe 	b	0x8
+   c:	eafffffe 	b	0xc
+  10:	eafffffe 	b	0x10
+  14:	eafffffe 	b	0x14
+  18:	eafffffe 	b	0x18
+  1c:	ea00000c 	b	0x54
+  20:	eafffffe 	b	0x20
+  24:	e3a0da01 	mov	sp, #4096	; 0x1000
+  28:	eb000012 	bl	0x78
+  2c:	e321f0d2 	msr	CPSR_c, #210	; 0xd2
+  30:	e3a0db03 	mov	sp, #3072	; 0xc00
+  34:	e321f0df 	msr	CPSR_c, #223	; 0xdf
+  38:	e3a0da01 	mov	sp, #4096	; 0x1000
+  3c:	eb000011 	bl	0x88
+  40:	eb000014 	bl	0x98
+  44:	e321f05f 	msr	CPSR_c, #95	; 0x5f
+  48:	e59fe018 	ldr	lr, [pc, #24]	; 0x68
+  4c:	e59ff018 	ldr	pc, [pc, #24]	; 0x6c
+  50:	eafffffe 	b	0x50
+  54:	e24ee004 	sub	lr, lr, #4
+  58:	e92d5fff 	push	{r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, sl, fp, ip, lr}
+  5c:	e59fe00c 	ldr	lr, [pc, #12]	; 0x70
+  60:	e59ff00c 	ldr	pc, [pc, #12]	; 0x74
+  64:	e8fd9fff 	ldm	sp!, {r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, sl, fp, ip, pc}^
+  68:	00000050 	andeq	r0, r0, r0, asr r0
+  6c:	00000000 	andeq	r0, r0, r0
+  70:	00000064 	andeq	r0, r0, r4, rrx
+  74:	000000d8 	ldrdeq	r0, [r0], -r8
+  78:	e3a03453 	mov	r3, #1392508928	; 0x53000000
+  7c:	e3a02000 	mov	r2, #0
+  80:	e5832000 	str	r2, [r3]
+  84:	e12fff1e 	bx	lr
+  88:	e3a03456 	mov	r3, #1442840576	; 0x56000000
+  8c:	e3a02b55 	mov	r2, #87040	; 0x15400
+  90:	e5832010 	str	r2, [r3, #16]
+  94:	e12fff1e 	bx	lr
+  98:	e3a01456 	mov	r1, #1442840576	; 0x56000000
+  9c:	e3a0244a 	mov	r2, #1241513984	; 0x4a000000
+  a0:	e59f302c 	ldr	r3, [pc, #44]	; 0xd4
+  a4:	e5813060 	str	r3, [r1, #96]	; 0x60
+  a8:	e59130a4 	ldr	r3, [r1, #164]	; 0xa4
+  ac:	e3c33702 	bic	r3, r3, #524288	; 0x80000
+  b0:	e3c33b02 	bic	r3, r3, #2048	; 0x800
+  b4:	e58130a4 	str	r3, [r1, #164]	; 0xa4
+  b8:	e592300c 	ldr	r3, [r2, #12]
+  bc:	e3c33001 	bic	r3, r3, #1
+  c0:	e582300c 	str	r3, [r2, #12]
+  c4:	e5923008 	ldr	r3, [r2, #8]
+  c8:	e3c33025 	bic	r3, r3, #37	; 0x25
+  cc:	e5823008 	str	r3, [r2, #8]
+  d0:	e12fff1e 	bx	lr
+  d4:	00800080 	addeq	r0, r0, r0, lsl #1
+  d8:	e3a0344a 	mov	r3, #1241513984	; 0x4a000000
+  dc:	e5932014 	ldr	r2, [r3, #20]
+  e0:	e3520002 	cmp	r2, #2
+  e4:	0a000029 	beq	0x190
+  e8:	e3520005 	cmp	r2, #5
+  ec:	0a000014 	beq	0x144
+  f0:	e3520000 	cmp	r2, #0
+  f4:	0a000005 	beq	0x110
+  f8:	e3520005 	cmp	r2, #5
+  fc:	1a00000a 	bne	0x12c
+ 100:	e3a03456 	mov	r3, #1442840576	; 0x56000000
+ 104:	e59f10a4 	ldr	r1, [pc, #164]	; 0x1b0
+ 108:	e58310a8 	str	r1, [r3, #168]	; 0xa8
+ 10c:	ea000006 	b	0x12c
+ 110:	e3a03456 	mov	r3, #1442840576	; 0x56000000
+ 114:	e5931014 	ldr	r1, [r3, #20]
+ 118:	e3811e1e 	orr	r1, r1, #480	; 0x1e0
+ 11c:	e5831014 	str	r1, [r3, #20]
+ 120:	e5931014 	ldr	r1, [r3, #20]
+ 124:	e3c11c01 	bic	r1, r1, #256	; 0x100
+ 128:	e5831014 	str	r1, [r3, #20]
+ 12c:	e3a03001 	mov	r3, #1
+ 130:	e3a0144a 	mov	r1, #1241513984	; 0x4a000000
+ 134:	e1a03213 	lsl	r3, r3, r2
+ 138:	e5813000 	str	r3, [r1]
+ 13c:	e5813010 	str	r3, [r1, #16]
+ 140:	e12fff1e 	bx	lr
+ 144:	e3a03456 	mov	r3, #1442840576	; 0x56000000
+ 148:	e5931014 	ldr	r1, [r3, #20]
+ 14c:	e3811e1e 	orr	r1, r1, #480	; 0x1e0
+ 150:	e5831014 	str	r1, [r3, #20]
+ 154:	e59310a8 	ldr	r1, [r3, #168]	; 0xa8
+ 158:	e3110b02 	tst	r1, #2048	; 0x800
+ 15c:	15930014 	ldrne	r0, [r3, #20]
+ 160:	13c00040 	bicne	r0, r0, #64	; 0x40
+ 164:	15830014 	strne	r0, [r3, #20]
+ 168:	e3110702 	tst	r1, #524288	; 0x80000
+ 16c:	0affffe3 	beq	0x100
+ 170:	e3a01456 	mov	r1, #1442840576	; 0x56000000
+ 174:	e5913014 	ldr	r3, [r1, #20]
+ 178:	e3c33020 	bic	r3, r3, #32
+ 17c:	e5813014 	str	r3, [r1, #20]
+ 180:	e3a03456 	mov	r3, #1442840576	; 0x56000000
+ 184:	e59f1024 	ldr	r1, [pc, #36]	; 0x1b0
+ 188:	e58310a8 	str	r1, [r3, #168]	; 0xa8
+ 18c:	eaffffe6 	b	0x12c
+ 190:	e3a03456 	mov	r3, #1442840576	; 0x56000000
+ 194:	e5931014 	ldr	r1, [r3, #20]
+ 198:	e3811e1e 	orr	r1, r1, #480	; 0x1e0
+ 19c:	e5831014 	str	r1, [r3, #20]
+ 1a0:	e5931014 	ldr	r1, [r3, #20]
+ 1a4:	e3c11080 	bic	r1, r1, #128	; 0x80
+ 1a8:	e5831014 	str	r1, [r3, #20]
+ 1ac:	eaffffde 	b	0x12c
+ 1b0:	00080800 	andeq	r0, r8, r0, lsl #16

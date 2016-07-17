@@ -1,0 +1,66 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+EINTMASK	s3c24xx.h	61;"	d
+EINTPEND	s3c24xx.h	62;"	d
+EINT_Handle	interrupt.c	/^void EINT_Handle()$/;"	f
+GPB5_out	init.c	16;"	d	file:
+GPB6_out	init.c	17;"	d	file:
+GPB7_out	init.c	18;"	d	file:
+GPB8_out	init.c	19;"	d	file:
+GPBCON	s3c24xx.h	22;"	d
+GPBDAT	s3c24xx.h	23;"	d
+GPFCON	s3c24xx.h	25;"	d
+GPFDAT	s3c24xx.h	26;"	d
+GPFUP	s3c24xx.h	27;"	d
+GPG11_eint	init.c	24;"	d	file:
+GPG3_eint	init.c	25;"	d	file:
+GPGCON	s3c24xx.h	29;"	d
+GPGDAT	s3c24xx.h	30;"	d
+GPGUP	s3c24xx.h	31;"	d
+GPHCON	s3c24xx.h	33;"	d
+GPHDAT	s3c24xx.h	34;"	d
+GPHUP	s3c24xx.h	35;"	d
+HandleDataAbort	head.S	/^HandleDataAbort:$/;"	l
+HandleFIQ	head.S	/^HandleFIQ:$/;"	l
+HandleIRQ	head.S	/^HandleIRQ:$/;"	l
+HandleNotUsed	head.S	/^HandleNotUsed:$/;"	l
+HandlePrefetchAbort	head.S	/^HandlePrefetchAbort:$/;"	l
+HandleSWI	head.S	/^HandleSWI:$/;"	l
+HandleUndef	head.S	/^HandleUndef:$/;"	l
+INTMOD	s3c24xx.h	52;"	d
+INTMSK	s3c24xx.h	53;"	d
+INTOFFSET	s3c24xx.h	56;"	d
+INTPND	s3c24xx.h	55;"	d
+INTSUBMSK	s3c24xx.h	58;"	d
+MEM_CTL_BASE	s3c24xx.h	11;"	d
+NFADDR	s3c24xx.h	17;"	d
+NFCMD	s3c24xx.h	16;"	d
+NFCONF	s3c24xx.h	15;"	d
+NFDATA	s3c24xx.h	18;"	d
+NFSTAT	s3c24xx.h	19;"	d
+PRIORITY	s3c24xx.h	54;"	d
+Reset	head.S	/^Reset:                  $/;"	l
+SDRAM_BASE	s3c24xx.h	12;"	d
+SRCPND	s3c24xx.h	51;"	d
+SUBSRCPND	s3c24xx.h	57;"	d
+UBRDIV0	s3c24xx.h	47;"	d
+UCON0	s3c24xx.h	41;"	d
+UFCON0	s3c24xx.h	42;"	d
+ULCON0	s3c24xx.h	40;"	d
+UMCON0	s3c24xx.h	43;"	d
+URXH0	s3c24xx.h	46;"	d
+UTRSTAT0	s3c24xx.h	44;"	d
+UTXH0	s3c24xx.h	45;"	d
+WTCON	s3c24xx.h	8;"	d
+_start	head.S	/^_start:$/;"	l
+disable_watch_dog	init.c	/^void disable_watch_dog(void)$/;"	f	signature:(void)
+halt_loop	head.S	/^halt_loop:$/;"	l
+init_irq	init.c	/^void init_irq( )$/;"	f
+init_led	init.c	/^void init_led(void)$/;"	f	signature:(void)
+int_return	head.S	/^int_return:$/;"	l
+main	main.c	/^int main()$/;"	f
+objs	Makefile	/^objs := head.o init.o interrupt.o main.o$/;"	m

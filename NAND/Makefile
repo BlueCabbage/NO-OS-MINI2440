@@ -1,4 +1,4 @@
-objs := head.o init.o nand.o leds.o
+objs := head.o init.o nand.o main.o
 
 all : nand.bin
 

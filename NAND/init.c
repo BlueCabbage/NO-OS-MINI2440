@@ -5,11 +5,11 @@
     > Created Time: Sat 16 Jul 2016 06:47:41 AM PDT
  ************************************************************************/
 #define WTCON		(*(volatile unsigned long *)0x53000000)
-#define CLKDIVN		(*(volatile unsigned long *)0x4C000014)
-#define MPLLCON		(*(volatile unsigned long *)0x4c000004)
+//#define CLKDIVN		(*(volatile unsigned long *)0x4C000014)
+//#define MPLLCON		(*(volatile unsigned long *)0x4c000004)
 
 /* SDRAM Register */
-#define	S3C2440_MPLL_400MHZ		((0x7f<<12)|(0x02<<4)|(0x01))
+//#define	S3C2440_MPLL_400MHZ		((0x7f<<12)|(0x02<<4)|(0x01))
 #define MEM_CTL_BASE			0X48000000
 
 
@@ -18,21 +18,6 @@ void disable_watch_dog()
 	WTCON = 0;
 }
 
-void clock_init(void)
-{
-	// LOCKTIME = 0X00FFFFFF; 
-	CLKDIVN	= 0X05;			// FCLK : HCLK : PCLK = 1:4:8, HDIVN=2, PDIVN=1
-		
-	/* If HDIVN != 0, the bus mode of CPU shoue be change from "fast bus mode" to "asynchronous bus mode" */
-	__asm__(
-			"MRC	P15, 0, R1, C1, C0, 0\n"	// Read out the control register
-			"ORR	R1, R1, #0XC0000000\n"		// set to asynchronous bus mode
-			"MCR	P15, 0, R1, C1, C0, 0\n"	// Write in the control register
-			);
-
-	MPLLCON = S3C2440_MPLL_400MHZ;				// now, FCLK=400MHZ, HCLK=100MHZ, PCLK=50MHZ
-
-}
 
 /* Set the 13 registers of SDRAM */
 void memsetup(void)

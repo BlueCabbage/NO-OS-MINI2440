@@ -1,42 +1,21 @@
+@ Set SDRAM, copy the code to SDRAM, and then run in SDRAM
 .text
 .global _start
-_start:
+_start:									
+										@ function disable_watch_dog, memsetup, init_nand, nand_read_ll define in init.c
 	LDR		SP, =0X4096
 	BL		disable_watch_dog
-	BL		clock_init
 	BL		memsetup
-	BL		nand_c_init
-	BL		copy_to_ram_from_nand
-	LDR		SP, =0X34000000
-	LDR		LR, =halt_loop
-	LDR		PC, _start_armboot			@ CMD B and BL only can jump to the 32MB nearby here
-										@ So use PC finish long jump
+	BL		nand_init
+										@ Copy code(compiled from main.c) from Nand flash memory at 4096, length 1024 to SDRAM
+	LDR		R0, =0X30000000				@ Destination addr 0x30000000(SDRAM addr)
+	MOV		R1, #4096					@ Src addr 4096
+	MOV		R2, #1024					@ Src length 1024 Bytes
+	BL		nand_read
 
-_start_armboot: 
-	.word main
+	LDR		SP, =0X34000000
+	LDR		LR, =halt_loop				@ Return addr
+	LDR		PC, =main					@ Command B and BL only have +-32MB Range form current addr to jump
 
 halt_loop:
 	B		halt_loop
-
-@
-@/*
-@ *  NAND FLASH init function
-@ *  TACLS: TWRPH0 : TWRPHO : TWRPH1 = 1: 2: 1, BUSS_WIDTH_8
-@ */
-@#define S3C2440_NAND_BASE		0X4E000000
-@#define NFCONF_OFFSET			0X0
-@#define	NFCONT_OFFSET			0X4
-@
-@
-@nand_asm_init:
-@	LDR		R0, =S3C2440_NAND_BASE
-@	LDR		R1, =0X001210
-@	STR		R1, [R0, #NFCONF_OFFSET]
-@	
-@	MOV		R1, #0X3
-@	STR		R1, [R0, #NFCONT_OFFSET]
-@
-@	MOV		PC, LR
-@
-
-

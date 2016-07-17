@@ -5,126 +5,324 @@
     > Created Time: Sat 16 Jul 2016 07:04:04 AM PDT
  ************************************************************************/
 
-// NAND Flash registers
-#define NFCONF		(*(volatile unsigned long *)0x4e000000) // Nand flash config register
-#define NFCONT		(*(volatile unsigned long *)0x4e000004)	// Nand flash control register
-#define NFCMD		(*(volatile unsigned long *)0x4e000008) // Nand flash command register
-#define NFADDR		(*(volatile unsigned long *)0x4e00000C) // Nand flash address register
-#define NFDATA		(*(volatile unsigned char *)0x4e000010) // Nand flash data register
-#define NFSTAT		(*(volatile unsigned long *)0x4e000020) // Nand flash state register
+#define GSTATUS1		(*(volatile unsigned int *)0x560000B0)
+#define BUSY			1
 
 
-// Standard Nand flash commands
-
-#define NAND_CMD_READ0		0
-#define NAND_CMD_READ1		1
-#define NAND_CMD_RNDOUT		5
-#define NAND_CMD_PAGEPROG	0x10
-#define NAND_CMD_READOOB	0x50
-#define NAND_CMD_ERASE1		0x60
-#define NAND_CMD_STATUS		0x70
-#define NAND_CMD_STATUS_MULTI	0x71
-#define NAND_CMD_SEQIN		0x80
-#define NAND_CMD_RNDIN		0x85
-#define NAND_CMD_READID		0x90
-#define NAND_CMD_ERASE2		0xd0
-#define NAND_CMD_RESET		0xff
-
-/* Extended commands for large page devices */
-#define NAND_CMD_READSTART		0x30
-#define NAND_CMD_RNDOUTSTART	0xE0
-#define NAND_CMD_CACHEDPROG		0x15
-
-#define NF_CMD(cmd)			(NFCMD=cmd)
-#define NF_ADDR(addr)		(NFADDR=addr)
-#define NF_RDDATA8			(NFDATA)
-#define NF_ENABLE_CE		(NFCONT &= ~(1<<1))		// Enable CS
-#define NF_DISABLE_CE		(NFCONT |= (1<<1))		// Disable CS
-#define	NF_CLEAR_RB			(NFSTAT |= (1<<2))		// Clear R/B bit
-#define NF_DETECT_RB		do { while (!(NFSTAT & (1<<2)));} while(0)
+typedef unsigned int S3C24X0_REG32;
 
 
+// Nand flash (see S3C2410 manual chapter 6)
+typedef struct {
+	S3C24X0_REG32	NFCONF;
+	S3C24X0_REG32	NFCMD;
+	S3C24X0_REG32	NFADDR;
+	S3C24X0_REG32	NFDATA;
+	S3C24X0_REG32	NFSTAT;
+	S3C24X0_REG32	NFECC;
+} S3C2410_NAND;
 
+// Nand flash (see S3C2440 manual chapter 6)
+typedef struct {
+	S3C24X0_REG32	NFCONF;
+	S3C24X0_REG32	NFCONT;
+	S3C24X0_REG32	NFCMD;
+	S3C24X0_REG32	NFADDR;
+	S3C24X0_REG32	NFDATA;
+	S3C24X0_REG32	NFMECCD0;
+	S3C24X0_REG32	NFMECCD1;
+	S3C24X0_REG32	NFSECCD;
+	S3C24X0_REG32	NFSTAT;
+	S3C24X0_REG32	NFMECC0;
+	S3C24X0_REG32	NFMECC1;
+	S3C24X0_REG32	NFSECC;
+	S3C24X0_REG32	NFSBLK;
+	S3C24X0_REG32	NFEBLK;
+} S3C2440_NAND;
+
+typedef struct {
+	void (*nand_reset)(void);
+	void (*wait_idle)(void);
+	void (*nand_select_chip)(void);
+	void (*nand_deselect_chip)(void);
+	void (*write_cmd)(int cmd);
+	void (*write_addr)(unsigned int addr);
+	unsigned char (*read_data)(void);
+} t_nand_chip;
+
+
+static S3C2410_NAND * s3c2410nand = (S3C2410_NAND *)0X4E000000;
+static S3C2440_NAND * s3c2440nand = (S3C2440_NAND *)0X4E000000;
+
+static t_nand_chip nand_chip;
+
+
+// call from extern function
+void nand_init(void);
+void nand_read(unsigned char *buf, unsigned long start_addr, int size);
+
+
+// Nand flash contrl 
+static void nand_reset(void);
+static void wait_idle(void);
+static void nand_select_chip(void);
+static void nand_deselect_chip(void);
+static void write_cmd(int cmd);
+static void write_addr(unsigned int addr);
+static unsigned char read_data(void);
+
+
+// Nand flash solve function for s3c2410
+static void s3c2410_nand_reset(void);
+static void s3c2410_wait_idle(void);
+static void s3c2410_nand_select_chip(void);
+static void s3c2410_nand_deselect_chip(void);
+static void s3c2410_write_cmd(int cmd);
+static void s3c2410_write_addr(unsigned int addr);
+static unsigned char s3c2410_read_data();
+
+
+// Nand flash solve function for s3c2440
+static void s3c2440_nand_reset(void);
+static void s3c2440_wait_idle(void);
+static void s3c2440_nand_select_chip(void);
+static void s3c2440_nand_deselect_chip(void);
+static void s3c2440_write_cmd(int cmd);
+static void s3c2440_write_addr(unsigned int addr);
+static unsigned char s3c2440_read_data();
+
+
+
+// S3C2410
+static void s3c2410_nand_reset(void)
+{
+	s3c2410_nand_select_chip();
+	s3c2410_write_cmd(0xff);		// reset cmd
+	s3c2410_wait_idle();
+	s3c2410_nand_deselect_chip();
+}
+
+static void s3c2410_wait_idle(void)
+{
+	int i;
+	volatile unsigned char *p = (volatile unsigned char *)&s3c2410nand->NFSTAT;
+	while ( !( *p & BUSY ))
+		for ( i = 0; i < 10; i ++ );
+}
+
+static void s3c2410_nand_select_chip(void)
+{ 
+	int i;
+	s3c2410nand->NFCONF &= ~(1 << 11);
+	for (i = 0; i < 10; i ++);
+}
+
+static void s3c2410_nand_deselect_chip(void)
+{
+	s3c2410nand->NFCONF |= (1 << 11);
+}
+
+static void s3c2410_write_cmd(int cmd)
+{
+	volatile unsigned char *p = (volatile unsigned char *)&s3c2410nand->NFCMD;
+	*p = cmd;
+}
+
+static void s3c2410_write_addr(unsigned int addr)
+{
+	int i;
+	volatile unsigned char *p = (volatile unsigned char *)&s3c2410nand->NFADDR;
+
+	*p = addr & 0xff;
+	for (i = 0; i < 10; i ++);
+	*p = (addr >> 9) & 0xff;
+	for (i = 0; i < 10; i ++);
+	*p = (addr >> 17) & 0xff;
+	for (i = 0; i < 10; i ++);
+	*p = (addr >> 25) & 0xff;
+	for (i = 0; i < 10; i ++);
+}
+
+static unsigned char s3c2410_read_data(void)
+{
+	volatile unsigned char *p = (volatile unsigned char *)&s3c2410nand->NFDATA;
+	return *p;
+}
+
+
+// S3C2440
+static void s3c2440_nand_reset(void)
+{
+	s3c2440_nand_select_chip();
+	s3c2440_write_cmd(0xff);		// reset cmd
+	s3c2440_wait_idle();
+	s3c2440_nand_deselect_chip();
+}
+
+static void s3c2440_wait_idle(void)
+{
+	int i;
+	volatile unsigned char *p = (volatile unsigned char *)&s3c2440nand->NFSTAT;
+	while ( !( *p & BUSY ))
+		for ( i = 0; i < 10; i ++ );
+}
+
+static void s3c2440_nand_select_chip(void)
+{ 
+	int i;
+	s3c2440nand->NFCONT &= ~(1 << 1);
+	for (i = 0; i < 10; i ++);
+}
+
+static void s3c2440_nand_deselect_chip(void)
+{
+	s3c2440nand->NFCONT |= (1 << 1);
+}
+
+static void s3c2440_write_cmd(int cmd)
+{
+	volatile unsigned char *p = (volatile unsigned char *)&s3c2440nand->NFCMD;
+	*p = cmd;
+}
+
+static void s3c2440_write_addr(unsigned int addr)
+{
+	int i;
+	volatile unsigned char *p = (volatile unsigned char *)&s3c2440nand->NFADDR;
+
+	*p = addr & 0xff;
+	for (i = 0; i < 10; i ++);
+	*p = (addr >> 9) & 0xff;
+	for (i = 0; i < 10; i ++);
+	*p = (addr >> 17) & 0xff;
+	for (i = 0; i < 10; i ++);
+	*p = (addr >> 25) & 0xff;
+	for (i = 0; i < 10; i ++);
+}
+
+static unsigned char s3c2440_read_data(void)
+{
+	volatile unsigned char *p = (volatile unsigned char *)&s3c2440nand->NFDATA;
+	return *p;
+}
+
+
+// at the first time use nand flash, reset nand flash
 static void nand_reset(void)
 {
-	NF_ENABLE_CE;
-	NF_CLEAR_RB;
-	NF_CMD(NAND_CMD_RESET);
-	NF_DETECT_RB;
-	NF_DISABLE_CE;
+	nand_chip.nand_reset();
+}
+
+static void wait_idle(void)
+{
+	nand_chip.wait_idle();
+}
+
+static void nand_select_chip(void)
+{
+	int i;
+	nand_chip.nand_select_chip();
+	for(i = 0; i < 10; i ++);
 }
 
 
-static int nand_read_page(unsigned char *buf, unsigned long addr, int large_block)
+static void nand_deselect_chip(void)
 {
-	int i;
-	int page_size = 512;
+	nand_chip.nand_deselect_chip();
+}
 
-	if (large_block) page_size = 2048;
+static void write_cmd(int cmd)
+{
+	nand_chip.write_cmd(cmd);
+}
 
-	NF_ENABLE_CE;
-	NF_CLEAR_RB;
+static void write_addr(unsigned int addr)
+{
+	nand_chip.write_addr(addr);
+}
 
-	NF_CMD(NAND_CMD_READ0);
+static unsigned char read_data(void)
+{
+	return nand_chip.read_data();
+}
 
-	NF_ADDR(0X0);
-	if (large_block) NF_ADDR(0X0);
 
-	NF_ADDR(addr & 0xff);
-	NF_ADDR((addr >> 9) & 0xFF);
-	NF_ADDR((addr >> 17) & 0xFF);
-	NF_ADDR((addr >> 25) & 0xFF);
 
-	if (large_block) NF_CMD(NAND_CMD_READSTART);
 
-	NF_DETECT_RB;
+// init nand flash
+void nand_init(void)
+{
+	#define TACLS		0
+	#define TWRPH0		3
+	#define TWRPH1		0
 
-	for (i = 0; i < page_size; i ++ ) {
-		buf[i] = NF_RDDATA8;
+	// judge it is s3c2410 or s3c2440
+	if ((GSTATUS1 == 0X32410000) || (GSTATUS1 == 0X32410002))
+	{
+		nand_chip.nand_reset			= s3c2410_nand_reset;
+		nand_chip.wait_idle				= s3c2410_wait_idle;
+		nand_chip.nand_select_chip		= s3c2410_nand_select_chip;
+		nand_chip.nand_deselect_chip	= s3c2410_nand_deselect_chip;
+		nand_chip.write_cmd				= s3c2410_write_cmd;
+		nand_chip.write_addr			= s3c2410_write_addr;
+		nand_chip.read_data				= s3c2410_read_data;
+
+		// enable nand flash control, initial ECC, disable cs, set the clock
+		s3c2410nand->NFCONF = (1<<15)|(1<<12)|(1<<11)|(TACLS<<8)|(TWRPH0<<4)|(TWRPH1<<0);
+
+	}
+	else {
+		
+		nand_chip.nand_reset			= s3c2440_nand_reset;
+		nand_chip.wait_idle				= s3c2440_wait_idle;
+		nand_chip.nand_select_chip		= s3c2440_nand_select_chip;
+		nand_chip.nand_deselect_chip	= s3c2440_nand_deselect_chip;
+		nand_chip.write_cmd				= s3c2440_write_cmd;
+		nand_chip.write_addr			= s3c2440_write_addr;
+		nand_chip.read_data				= s3c2440_read_data;
+
+		// set the clock
+		s3c2440nand->NFCONF = (TACLS<<12)|(TWRPH0<<8)|(TWRPH1<<4);
+		//enable nand flash control, initial ECC, disable cs
+		s3c2440nand->NFCONT = (1<<4)|(1<<1)|(1<<0);
+
 	}
 
-	NF_DISABLE_CE;
-
-	return 0;
-}
-
-static int nand_read_blocks(unsigned long dst_addr, unsigned long size, int large_block) 
-{
-	int i;
-	unsigned char *buf = (unsigned char *)dst_addr;
-	unsigned int page_shift = 9;
-
-	if (large_block) page_shift = 11;
-
-	for (i = 0; i < (size >> page_shift); i++, buf += (1<<page_shift)) {
-		nand_read_page(buf, i, large_block);
-	}
-
-	return 0;
-}
-
-
-int copy_to_ram_from_nand(void) 
-{
-	int large_block = 0;
-	int i;
-	volatile unsigned char id;
-
-	NF_ENABLE_CE;
-	NF_CMD(NAND_CMD_READID);
-	NF_ADDR(0X0);
-
-	for (i = 0; i < 200; i ++ ); // temp delay
-	
-	id = NF_RDDATA8;	// Maker Code
-	id = NF_RDDATA8;	// Device Code
-
+	// reset nand flash
 	nand_reset();
-
-	if (id > 0x80) {
-		large_block = 1;
-	}
-
-	return nand_read_blocks((unsigned int)0x30000000, (unsigned int)0x100000, large_block);
 }
 
+
+#define NAND_SECTOR_SIZE		512
+#define NAND_BLOCK_MASK			(NAND_SECTOR_SIZE - 1)
+
+// read 
+void nand_read(unsigned char *buf, unsigned long start_addr, int size)
+{
+	int i, j;
+
+	if ((start_addr & NAND_BLOCK_MASK) || (size & NAND_BLOCK_MASK)) {
+		return; // addr or length not align
+	}
+
+	// Select the chip
+	nand_select_chip();
+
+	for (i = start_addr; i < (start_addr + size); ) {
+		write_cmd(0);		// send cmd read0
+		
+		write_addr(i);;
+		wait_idle();
+
+		for (j = 0; j < NAND_SECTOR_SIZE; j ++, i ++) {
+			*buf = read_data();
+			buf ++;
+		}
+	}
+
+	// deselect the chip
+	nand_deselect_chip();
+
+
+	return;
+}
