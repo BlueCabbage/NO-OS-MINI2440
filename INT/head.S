@@ -2,9 +2,10 @@
 @ File：head.S
 @ 功能：初始化，设置中断模式、系统模式的栈，设置好中断处理函数
 @******************************************************************************       
-.extern     main
 .text 
 .global _start 
+.extern     main
+
 _start:
 @******************************************************************************       
 @ 中断向量，本程序中，除Reset和HandleIRQ外，其它异常都没有使用
@@ -27,16 +28,17 @@ HandlePrefetchAbort:
 HandleDataAbort:
     b   HandleDataAbort
 
+@ 0x18: 中断模式的向量地址
+    b   HandleIRQ
+
 @ 0x14: 保留
 HandleNotUsed:
     b   HandleNotUsed
 
-@ 0x18: 中断模式的向量地址
-    b   HandleIRQ
-
 @ 0x1c: 快中断模式的向量地址
 HandleFIQ:
     b   HandleFIQ
+
 
 Reset:                  
     ldr sp, =4096           @ 设置栈指针，以下都是C函数，调用前需要设好栈

@@ -1,0 +1,28 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+GPB5_OUT	button.c	19;"	d	file:
+GPB6_OUT	button.c	20;"	d	file:
+GPB7_OUT	button.c	21;"	d	file:
+GPB8_OUT	button.c	22;"	d	file:
+GPBCON	button.c	8;"	d	file:
+GPBDAT	button.c	9;"	d	file:
+GPG11_IN	button.c	29;"	d	file:
+GPG1_IN	button.c	24;"	d	file:
+GPG3_IN	button.c	25;"	d	file:
+GPG5_IN	button.c	26;"	d	file:
+GPG6_IN	button.c	27;"	d	file:
+GPG7_IN	button.c	28;"	d	file:
+GPGCON	button.c	11;"	d	file:
+GPGDAT	button.c	12;"	d	file:
+_start	head.S	/^_start:$/;"	l
+copy_steppingstone_to_sdram	head.S	/^copy_steppingstone_to_sdram:$/;"	l
+disable_watch_dog	head.S	/^disable_watch_dog:$/;"	l
+halt_loop	head.S	/^halt_loop:$/;"	l
+main	button.c	/^int main()$/;"	f
+mem_cfg_val	head.S	/^mem_cfg_val:$/;"	l
+memsetup	head.S	/^memsetup:$/;"	l
+on_sdram	head.S	/^on_sdram:$/;"	l

@@ -4,18 +4,18 @@ led_on_elf:     file format elf32-littlearm
 
 Disassembly of section .text:
 
-00000000 <_start>:
-   0:	e59f0014 	ldr	r0, [pc, #20]	; 1c <MAIN_LOOP+0x4>
-   4:	e3a01b55 	mov	r1, #87040	; 0x15400
-   8:	e5801000 	str	r1, [r0]
-   c:	e59f000c 	ldr	r0, [pc, #12]	; 20 <MAIN_LOOP+0x8>
-  10:	e3a01000 	mov	r1, #0
-  14:	e5801000 	str	r1, [r0]
+00000030 <_start>:
+  30:	e59f0014 	ldr	r0, [pc, #20]	; 4c <MAIN_LOOP+0x4>
+  34:	e3a01b55 	mov	r1, #87040	; 0x15400
+  38:	e5801000 	str	r1, [r0]
+  3c:	e59f000c 	ldr	r0, [pc, #12]	; 50 <MAIN_LOOP+0x8>
+  40:	e3a01000 	mov	r1, #0
+  44:	e5801000 	str	r1, [r0]
 
-00000018 <MAIN_LOOP>:
-  18:	eafffffe 	b	18 <MAIN_LOOP>
-  1c:	56000010 			; <UNDEFINED> instruction: 0x56000010
-  20:	56000014 			; <UNDEFINED> instruction: 0x56000014
+00000048 <MAIN_LOOP>:
+  48:	eafffffe 	b	48 <MAIN_LOOP>
+  4c:	56000010 			; <UNDEFINED> instruction: 0x56000010
+  50:	56000014 			; <UNDEFINED> instruction: 0x56000014
 
 Disassembly of section .debug_aranges:
 
@@ -23,7 +23,8 @@ Disassembly of section .debug_aranges:
    0:	0000001c 	andeq	r0, r0, ip, lsl r0
    4:	00000002 	andeq	r0, r0, r2
    8:	00040000 	andeq	r0, r4, r0
-	...
+   c:	00000000 	andeq	r0, r0, r0
+  10:	00000030 	andeq	r0, r0, r0, lsr r0
   14:	00000024 	andeq	r0, r0, r4, lsr #32
 	...
 
@@ -33,8 +34,9 @@ Disassembly of section .debug_info:
    0:	0000005e 	andeq	r0, r0, lr, asr r0
    4:	00000002 	andeq	r0, r0, r2
    8:	01040000 	mrseq	r0, (UNDEF: 4)
-	...
-  14:	00000024 	andeq	r0, r0, r4, lsr #32
+   c:	00000000 	andeq	r0, r0, r0
+  10:	00000030 	andeq	r0, r0, r0, lsr r0
+  14:	00000054 	andeq	r0, r0, r4, asr r0
   18:	5f64656c 	svcpl	0x0064656c
   1c:	532e6e6f 			; <UNDEFINED> instruction: 0x532e6e6f
   20:	6f682f00 	svcvs	0x00682f00
@@ -79,7 +81,7 @@ Disassembly of section .debug_line:
   20:	532e6e6f 			; <UNDEFINED> instruction: 0x532e6e6f
   24:	00000000 	andeq	r0, r0, r0
   28:	02050000 	andeq	r0, r5, #0
-  2c:	00000000 	andeq	r0, r0, r0
+  2c:	00000030 	andeq	r0, r0, r0, lsr r0
   30:	2f2f2f17 	svccs	0x002f2f17
   34:	03312f2f 	teqeq	r1, #47, 30	; 0xbc
   38:	02312e78 	eorseq	r2, r1, #120, 28	; 0x780

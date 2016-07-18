@@ -7,10 +7,10 @@ int.bin : $(objs)
 	arm-none-eabi-objdump -D -m arm -b binary $@ > int_bin.dis
 
 %.o : %.c
-	arm-none-eabi-gcc -Wall -O2 -c -o $@ $<
+	arm-none-eabi-gcc -Wall -g -O2 -c -o $@ $<
 
 %.o : %.S
-	arm-none-eabi-gcc -Wall -O2 -c -o $@ $<
+	arm-none-eabi-gcc -Wall -g -O2 -c -o $@ $<
 
 
 clean:

@@ -23,8 +23,8 @@
  */
 #define GPG11_eint      (2<<(11*2))     // K1,EINT19
 #define GPG3_eint       (2<<(3*2))      // K2,EINT11
-//#define GPF2_eint       (2<<(2*2))      // K3,EINT2
-//#define GPF0_eint       (2<<(0*2))      // K4,EINT0
+#define GPF2_eint       (2<<(2*2))      // K3,EINT2
+#define GPF0_eint       (2<<(0*2))      // K4,EINT0
 
  
 /*
@@ -46,7 +46,7 @@ void init_led(void)
  */ 
 void init_irq( )
 {
-//    GPFCON  = GPF0_eint | GPF2_eint;
+    GPFCON  = GPF0_eint | GPF2_eint;
     GPGCON  = GPG3_eint | GPG11_eint;
     
     // 对于EINT11、19，需要在EINTMASK寄存器中使能它们
