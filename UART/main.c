@@ -14,10 +14,13 @@ int main()
 
     while(1)
     {
-        // 从串口接收数据后，判断其是否数字或子母，若是则加1后输出
-        c = getc();
-        if (isDigit(c) || isLetter(c))
-            putc(c+1);
+	   // 从串口接收数据后，判断其是否数字或子母，若是则加1后输出
+       c = getc();
+      // if (isDigit(c) || isLetter(c))
+      //     putc(c+1);
+	   putc('c');
+	   putc(c+1);
+	   putc('a');
     }
 
     return 0;

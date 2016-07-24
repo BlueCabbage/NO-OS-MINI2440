@@ -12,7 +12,8 @@ Reset:
     bl  disable_watch_dog   @ 关闭WATCHDOG，否则CPU会不断重启
     bl  clock_init          @ 设置MPLL，改变FCLK、HCLK、PCLK
     bl  memsetup            @ 设置存储控制器以使用SDRAM
-    bl  copy_steppingstone_to_sdram     @ 复制代码到SDRAM中
+    @bl  copy_steppingstone_to_sdram     @ 复制代码到SDRAM中
+	bl	 copy_steppingstone_to_sdram_asm
     ldr pc, =on_sdram                   @ 跳到SDRAM中继续执行
 on_sdram:
     ldr sp, =0x34000000     @ 设置栈指针，
@@ -20,3 +21,18 @@ on_sdram:
     ldr pc, =main           @ 调用main函数
 halt_loop:
     b   halt_loop
+
+
+.equ	SDRAM_BASE, 0X30000000
+copy_steppingstone_to_sdram_asm:
+	MOV		R1, #0
+	LDR		R2, =SDRAM_BASE
+	MOV		R3, #4*4096
+1:
+	LDR		R4, [R1], #4
+	STR		R4, [R2], #4
+	CMP		R1, R3
+	BNE		1b
+	MOV		PC, LR
+
+
