@@ -23,7 +23,7 @@ void disable_watch_dog()
 void memsetup(void)
 {
 	int i = 0;
-	unsigned long *p = (unsigned long *)MEM_CTL_BASE;
+	volatile unsigned long *p = (unsigned long *)MEM_CTL_BASE;
 
 	unsigned long const mem_cfg_val[] = {
 											0x22011110,		// BWSCON

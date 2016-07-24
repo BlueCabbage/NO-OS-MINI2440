@@ -1,0 +1,96 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+CLKCON	s3c24xx.h	68;"	d
+CLKDIVN	s3c24xx.h	70;"	d
+CLKSLOW	s3c24xx.h	69;"	d
+EINTMASK	s3c24xx.h	61;"	d
+EINTPEND	s3c24xx.h	62;"	d
+EINT_Handle	interrupt.h	/^void EINT_Handle();$/;"	p	signature:()
+GPB5_out	init.c	112;"	d	file:
+GPB6_out	init.c	113;"	d	file:
+GPB7_out	init.c	114;"	d	file:
+GPB8_out	init.c	115;"	d	file:
+GPBCON	s3c24xx.h	22;"	d
+GPBDAT	s3c24xx.h	23;"	d
+GPF2_eint	init.c	123;"	d	file:
+GPF3_eint	init.c	122;"	d	file:
+GPFCON	s3c24xx.h	25;"	d
+GPFDAT	s3c24xx.h	26;"	d
+GPFUP	s3c24xx.h	27;"	d
+GPG11_eint	init.c	120;"	d	file:
+GPG3_eint	init.c	121;"	d	file:
+GPGCON	s3c24xx.h	29;"	d
+GPGDAT	s3c24xx.h	30;"	d
+GPGUP	s3c24xx.h	31;"	d
+GPHCON	s3c24xx.h	33;"	d
+GPHDAT	s3c24xx.h	34;"	d
+GPHUP	s3c24xx.h	35;"	d
+GSTATUS1	s3c24xx.h	81;"	d
+HandleDataAbort	head.S	/^HandleDataAbort:$/;"	l
+HandleFIQ	head.S	/^HandleFIQ:$/;"	l
+HandleIRQ	head.S	/^HandleIRQ:$/;"	l
+HandleNotUsed	head.S	/^HandleNotUsed:$/;"	l
+HandlePrefetchAbort	head.S	/^HandlePrefetchAbort:$/;"	l
+HandleSWI	head.S	/^HandleSWI:$/;"	l
+HandleUndef	head.S	/^HandleUndef:$/;"	l
+INTMOD	s3c24xx.h	52;"	d
+INTMSK	s3c24xx.h	53;"	d
+INTOFFSET	s3c24xx.h	56;"	d
+INTPND	s3c24xx.h	55;"	d
+INTSUBMSK	s3c24xx.h	58;"	d
+LOCKTIME	s3c24xx.h	65;"	d
+MEM_CTL_BASE	s3c24xx.h	11;"	d
+MPLLCON	s3c24xx.h	66;"	d
+NFADDR	s3c24xx.h	17;"	d
+NFCMD	s3c24xx.h	16;"	d
+NFCONF	s3c24xx.h	15;"	d
+NFDATA	s3c24xx.h	18;"	d
+NFSTAT	s3c24xx.h	19;"	d
+PRIORITY	s3c24xx.h	54;"	d
+Reset	head.S	/^Reset:                  $/;"	l
+S3C2410_MPLL_200MHZ	init.c	29;"	d	file:
+S3C2440_MPLL_200MHZ	init.c	30;"	d	file:
+SDRAM_BASE	s3c24xx.h	12;"	d
+SRCPND	s3c24xx.h	51;"	d
+SUBSRCPND	s3c24xx.h	57;"	d
+TCFG0	s3c24xx.h	74;"	d
+TCFG1	s3c24xx.h	75;"	d
+TCMPB0	s3c24xx.h	78;"	d
+TCNTB0	s3c24xx.h	77;"	d
+TCNTO0	s3c24xx.h	79;"	d
+TCON	s3c24xx.h	76;"	d
+Timer0_Handle	interrupt.c	/^void Timer0_Handle(void)$/;"	f	signature:(void)
+UBRDIV0	s3c24xx.h	47;"	d
+UCON0	s3c24xx.h	41;"	d
+UFCON0	s3c24xx.h	42;"	d
+ULCON0	s3c24xx.h	40;"	d
+UMCON0	s3c24xx.h	43;"	d
+UPLLCON	s3c24xx.h	67;"	d
+URXH0	s3c24xx.h	46;"	d
+UTRSTAT0	s3c24xx.h	44;"	d
+UTXH0	s3c24xx.h	45;"	d
+WTCON	s3c24xx.h	8;"	d
+_start	head.S	/^_start:$/;"	l
+clock_init	init.c	/^void clock_init(void)$/;"	f	signature:(void)
+clock_init	init.c	/^void clock_init(void);$/;"	p	file:	signature:(void)
+copy_steppingstone_to_sdram	init.c	/^void copy_steppingstone_to_sdram(void)$/;"	f	signature:(void)
+copy_steppingstone_to_sdram	init.c	/^void copy_steppingstone_to_sdram(void);$/;"	p	file:	signature:(void)
+disable_watch_dog	init.c	/^void disable_watch_dog(void)$/;"	f	signature:(void)
+disable_watch_dog	init.c	/^void disable_watch_dog(void);$/;"	p	file:	signature:(void)
+halt_loop	head.S	/^halt_loop:$/;"	l
+init_irq	init.c	/^void init_irq(void)$/;"	f	signature:(void)
+init_irq	init.c	/^void init_irq(void);$/;"	p	file:	signature:(void)
+init_led	init.c	/^void init_led(void)$/;"	f	signature:(void)
+init_led	init.c	/^void init_led(void);$/;"	p	file:	signature:(void)
+int_return	head.S	/^int_return:$/;"	l
+main	main.c	/^int main(void)$/;"	f	signature:(void)
+memsetup	init.c	/^void memsetup(void)$/;"	f	signature:(void)
+memsetup	init.c	/^void memsetup(void);$/;"	p	file:	signature:(void)
+objs	Makefile	/^objs := head.o init.o interrupt.o main.o$/;"	m
+on_sdram	head.S	/^on_sdram:$/;"	l
+timer0_init	init.c	/^void timer0_init(void)$/;"	f	signature:(void)
+timer0_init	init.c	/^void timer0_init(void);$/;"	p	file:	signature:(void)

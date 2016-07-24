@@ -30,7 +30,7 @@ static inline void wait(unsigned long dly)
 
 int main(void) 
 {
-	unsigned long i = 5;
+//	unsigned long i = 5;
 
 	// Set the pin of led at output mode
 	GPBCON = GPB5_OUT | GPB6_OUT | GPB7_OUT | GPB8_OUT;
@@ -42,7 +42,8 @@ int main(void)
 //			i = 5;
 //	}
 	
-	GPBDAT = (~(5 << 5));
+//	GPBDAT = (~(5 << 5));
+	GPBDAT = 0X0000;
 	while(1);
 
 	return 0;

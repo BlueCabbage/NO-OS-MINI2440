@@ -1,0 +1,33 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+GPB5_OUT	leds.c	11;"	d	file:
+GPB6_OUT	leds.c	12;"	d	file:
+GPB7_OUT	leds.c	13;"	d	file:
+GPB8_OUT	leds.c	14;"	d	file:
+GPBCON	leds.c	8;"	d	file:
+GPBDAT	leds.c	9;"	d	file:
+MEM_CTL_BASE	init.c	17;"	d	file:
+MMU_BUFFERABLE	init.c	81;"	d	file:
+MMU_CACHEABLE	init.c	80;"	d	file:
+MMU_DOMAIN	init.c	78;"	d	file:
+MMU_FULL_ACCESS	init.c	77;"	d	file:
+MMU_SECDESC	init.c	83;"	d	file:
+MMU_SECDESC_WB	init.c	84;"	d	file:
+MMU_SECTION	init.c	82;"	d	file:
+MMU_SECTION_SIZE	init.c	85;"	d	file:
+MMU_SPECIAL	init.c	79;"	d	file:
+WTCON	init.c	14;"	d	file:
+_start	head.S	/^_start:$/;"	l
+copy_2th_to_sdram	init.c	/^void copy_2th_to_sdram(void)$/;"	f	signature:(void)
+create_page_table	init.c	/^void create_page_table(void)$/;"	f	signature:(void)
+disable_watch_dog	init.c	/^void disable_watch_dog(void)$/;"	f	signature:(void)
+halt_loop	head.S	/^halt_loop:$/;"	l
+main	leds.c	/^int main(void) $/;"	f	signature:(void)
+memsetup	init.c	/^void memsetup(void)$/;"	f	signature:(void)
+mmu_init	init.c	/^void mmu_init(void) $/;"	f	signature:(void)
+objs	Makefile	/^objs := head.o init.o leds.o$/;"	m
+wait	leds.c	/^static inline void wait(unsigned long dly) $/;"	f	file:	signature:(unsigned long dly)
