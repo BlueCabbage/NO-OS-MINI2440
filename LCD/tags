@@ -1,0 +1,743 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ALIGN	lib/div64.S	/^#define ALIGN		.align 4,0x90	$/;"	d
+ALIGN	lib/lib1funcs.S	/^#define ALIGN		.align 4,0x90$/;"	d
+AR	Makefile	/^AR      = arm-none-eabi-ar$/;"	m
+BITS_PER_UNIT	include/gcclib.h	4;"	d
+BIT_ADC	s3c24xx.h	194;"	d
+BIT_ALLMSK	s3c24xx.h	195;"	d
+BIT_BAT_FLT	s3c24xx.h	170;"	d
+BIT_CAM	s3c24xx.h	169;"	d
+BIT_DMA0	s3c24xx.h	180;"	d
+BIT_DMA1	s3c24xx.h	181;"	d
+BIT_DMA2	s3c24xx.h	182;"	d
+BIT_DMA3	s3c24xx.h	183;"	d
+BIT_EINT0	s3c24xx.h	163;"	d
+BIT_EINT1	s3c24xx.h	164;"	d
+BIT_EINT2	s3c24xx.h	165;"	d
+BIT_EINT3	s3c24xx.h	166;"	d
+BIT_EINT4_7	s3c24xx.h	167;"	d
+BIT_EINT8_23	s3c24xx.h	168;"	d
+BIT_IIC	s3c24xx.h	190;"	d
+BIT_LCD	s3c24xx.h	179;"	d
+BIT_NFCON	s3c24xx.h	187;"	d
+BIT_RTC	s3c24xx.h	193;"	d
+BIT_SDI	s3c24xx.h	184;"	d
+BIT_SPI0	s3c24xx.h	185;"	d
+BIT_SPI1	s3c24xx.h	192;"	d
+BIT_SUB_AC97	s3c24xx.h	198;"	d
+BIT_SUB_ADC	s3c24xx.h	202;"	d
+BIT_SUB_ALLMSK	s3c24xx.h	197;"	d
+BIT_SUB_CAM_C	s3c24xx.h	201;"	d
+BIT_SUB_CAM_S	s3c24xx.h	200;"	d
+BIT_SUB_ERR0	s3c24xx.h	210;"	d
+BIT_SUB_ERR1	s3c24xx.h	207;"	d
+BIT_SUB_ERR2	s3c24xx.h	204;"	d
+BIT_SUB_RXD0	s3c24xx.h	212;"	d
+BIT_SUB_RXD1	s3c24xx.h	209;"	d
+BIT_SUB_RXD2	s3c24xx.h	206;"	d
+BIT_SUB_TC	s3c24xx.h	203;"	d
+BIT_SUB_TXD0	s3c24xx.h	211;"	d
+BIT_SUB_TXD1	s3c24xx.h	208;"	d
+BIT_SUB_TXD2	s3c24xx.h	205;"	d
+BIT_SUB_WDT	s3c24xx.h	199;"	d
+BIT_TICK	s3c24xx.h	171;"	d
+BIT_TIMER0	s3c24xx.h	173;"	d
+BIT_TIMER1	s3c24xx.h	174;"	d
+BIT_TIMER2	s3c24xx.h	175;"	d
+BIT_TIMER3	s3c24xx.h	176;"	d
+BIT_TIMER4	s3c24xx.h	177;"	d
+BIT_UART0	s3c24xx.h	191;"	d
+BIT_UART1	s3c24xx.h	186;"	d
+BIT_UART2	s3c24xx.h	178;"	d
+BIT_USBD	s3c24xx.h	188;"	d
+BIT_USBH	s3c24xx.h	189;"	d
+BIT_WDT_AC97	s3c24xx.h	172;"	d
+BLUELUT	s3c24xx.h	119;"	d
+BPPMODE_16BPP	lcddrv.h	17;"	d
+BPPMODE_1BPP	lcddrv.h	13;"	d
+BPPMODE_24BPP	lcddrv.h	18;"	d
+BPPMODE_2BPP	lcddrv.h	14;"	d
+BPPMODE_4BPP	lcddrv.h	15;"	d
+BPPMODE_8BPP	lcddrv.h	16;"	d
+BSWP	lcddrv.h	34;"	d
+BUSY	nand.c	3;"	d	file:
+CC	Makefile	/^CC      = arm-none-eabi-gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS 		:= -Wall -O2$/;"	m
+CLKCON	s3c24xx.h	89;"	d
+CLKDIVN	s3c24xx.h	91;"	d
+CLKSLOW	s3c24xx.h	90;"	d
+CLKVAL_TFT_240320	lcddrv.h	51;"	d
+CLKVAL_TFT_640480	lcddrv.h	88;"	d
+CPPFLAGS	Makefile	/^CPPFLAGS   	:= -nostdinc -I$(INCLUDEDIR)$/;"	m
+CPUID_CACHETYPE	include/system.h	46;"	d
+CPUID_ID	include/system.h	45;"	d
+CPUID_TCM	include/system.h	47;"	d
+CPUID_TLBTYPE	include/system.h	48;"	d
+CPU_ARCH_ARMv3	include/system.h	9;"	d
+CPU_ARCH_ARMv4	include/system.h	10;"	d
+CPU_ARCH_ARMv4T	include/system.h	11;"	d
+CPU_ARCH_ARMv5	include/system.h	12;"	d
+CPU_ARCH_ARMv5T	include/system.h	13;"	d
+CPU_ARCH_ARMv5TE	include/system.h	14;"	d
+CPU_ARCH_ARMv5TEJ	include/system.h	15;"	d
+CPU_ARCH_ARMv6	include/system.h	16;"	d
+CPU_ARCH_UNKNOWN	include/system.h	8;"	d
+CR_A	include/system.h	22;"	d
+CR_B	include/system.h	28;"	d
+CR_C	include/system.h	23;"	d
+CR_D	include/system.h	26;"	d
+CR_DT	include/system.h	37;"	d
+CR_F	include/system.h	31;"	d
+CR_FI	include/system.h	40;"	d
+CR_I	include/system.h	33;"	d
+CR_IT	include/system.h	38;"	d
+CR_L	include/system.h	27;"	d
+CR_L4	include/system.h	36;"	d
+CR_M	include/system.h	21;"	d
+CR_P	include/system.h	25;"	d
+CR_R	include/system.h	30;"	d
+CR_RR	include/system.h	35;"	d
+CR_S	include/system.h	29;"	d
+CR_ST	include/system.h	39;"	d
+CR_U	include/system.h	41;"	d
+CR_V	include/system.h	34;"	d
+CR_VE	include/system.h	43;"	d
+CR_W	include/system.h	24;"	d
+CR_XP	include/system.h	42;"	d
+CR_Z	include/system.h	32;"	d
+ChangePalette	lcddrv.c	/^void ChangePalette(UINT32 color)$/;"	f	signature:(UINT32 color)
+ChangePalette	lcddrv.h	/^void ChangePalette(UINT32 color);$/;"	p	signature:(UINT32 color)
+ClearScr	framebuffer.c	/^void ClearScr(UINT32 color)$/;"	f	signature:(UINT32 color)
+ClearScr	framebuffer.h	/^void ClearScr(UINT32 color);$/;"	p	signature:(UINT32 color)
+ClearScrWithTmpPlt	lcddrv.c	/^void ClearScrWithTmpPlt(UINT32 color)$/;"	f	signature:(UINT32 color)
+ClearScrWithTmpPlt	lcddrv.h	/^void ClearScrWithTmpPlt(UINT32 color);$/;"	p	signature:(UINT32 color)
+CopyCode2SDRAM	init.c	/^int CopyCode2SDRAM(unsigned char *buf, unsigned long start_addr, int size)$/;"	f	signature:(unsigned char *buf, unsigned long start_addr, int size)
+DEMO256pal	lcddrv.c	/^static const unsigned short DEMO256pal[]={$/;"	v	file:
+DITHMODE	s3c24xx.h	120;"	d
+DIstruct	include/gcclib.h	/^  struct DIstruct {SItype high, low;};$/;"	s
+DIstruct	include/gcclib.h	/^  struct DIstruct {SItype low, high;};$/;"	s
+DIstruct::high	include/gcclib.h	/^  struct DIstruct {SItype high, low;};$/;"	m	struct:DIstruct	access:public
+DIstruct::high	include/gcclib.h	/^  struct DIstruct {SItype low, high;};$/;"	m	struct:DIstruct	access:public
+DIstruct::low	include/gcclib.h	/^  struct DIstruct {SItype high, low;};$/;"	m	struct:DIstruct	access:public
+DIstruct::low	include/gcclib.h	/^  struct DIstruct {SItype low, high;};$/;"	m	struct:DIstruct	access:public
+DItype	include/gcclib.h	/^typedef          int DItype     __attribute__ ((mode (DI)));$/;"	t
+DIunion	include/gcclib.h	/^} DIunion;$/;"	t	typeref:union:__anon4
+DisableTmpPlt	lcddrv.c	/^void DisableTmpPlt(void)$/;"	f	signature:(void)
+DisableTmpPlt	lcddrv.h	/^void DisableTmpPlt(void);$/;"	p	signature:(void)
+DrawLine	framebuffer.c	/^void DrawLine(int x1,int y1,int x2,int y2,int color)$/;"	f	signature:(int x1,int y1,int x2,int y2,int color)
+DrawLine	framebuffer.h	/^void DrawLine(int x1,int y1,int x2,int y2,int color);$/;"	p	signature:(int x1,int y1,int x2,int y2,int color)
+Dummy_isr	interrupt.c	/^void Dummy_isr(void)$/;"	f	signature:(void)
+EINTMASK	s3c24xx.h	82;"	d
+EINTPEND	s3c24xx.h	83;"	d
+EINT_Handle	interrupt.h	/^void EINT_Handle();$/;"	p	signature:()
+ENTRY	lib/div64.S	/^#define ENTRY(name) \\$/;"	d
+ENTRY	lib/lib1funcs.S	/^#define ENTRY(name) \\$/;"	d
+ENVID_DISABLE	lcddrv.h	22;"	d
+ENVID_ENABLE	lcddrv.h	23;"	d
+FCLK	init.c	21;"	d	file:
+FORMAT8BPP_5551	lcddrv.h	25;"	d
+FORMAT8BPP_565	lcddrv.h	26;"	d
+GPACON	s3c24xx.h	27;"	d
+GPADAT	s3c24xx.h	28;"	d
+GPBCON	s3c24xx.h	30;"	d
+GPBDAT	s3c24xx.h	31;"	d
+GPBUP	s3c24xx.h	32;"	d
+GPCCON	s3c24xx.h	34;"	d
+GPCDAT	s3c24xx.h	35;"	d
+GPCUP	s3c24xx.h	36;"	d
+GPDCON	s3c24xx.h	38;"	d
+GPDDAT	s3c24xx.h	39;"	d
+GPDUP	s3c24xx.h	40;"	d
+GPECON	s3c24xx.h	42;"	d
+GPEDAT	s3c24xx.h	43;"	d
+GPEUP	s3c24xx.h	44;"	d
+GPFCON	s3c24xx.h	46;"	d
+GPFDAT	s3c24xx.h	47;"	d
+GPFUP	s3c24xx.h	48;"	d
+GPGCON	s3c24xx.h	50;"	d
+GPGDAT	s3c24xx.h	51;"	d
+GPGUP	s3c24xx.h	52;"	d
+GPHCON	s3c24xx.h	54;"	d
+GPHDAT	s3c24xx.h	55;"	d
+GPHUP	s3c24xx.h	56;"	d
+GREENLUT	s3c24xx.h	118;"	d
+GSTATUS1	nand.c	2;"	d	file:
+GSTATUS1	s3c24xx.h	214;"	d
+HBPD_240320	lcddrv.h	59;"	d
+HBPD_640480	lcddrv.h	83;"	d
+HCLK	init.c	22;"	d	file:
+HFPD_240320	lcddrv.h	60;"	d
+HFPD_640480	lcddrv.h	84;"	d
+HOZVAL_TFT_240320	lcddrv.h	48;"	d
+HOZVAL_TFT_640480	lcddrv.h	76;"	d
+HSPW_240320	lcddrv.h	61;"	d
+HSPW_640480	lcddrv.h	85;"	d
+HSYNC_INV	lcddrv.h	29;"	d
+HSYNC_NORM	lcddrv.h	28;"	d
+HWSWP	lcddrv.h	35;"	d
+HandleDataAbort	head.S	/^HandleDataAbort:$/;"	l
+HandleFIQ	head.S	/^HandleFIQ:$/;"	l
+HandleIRQ	head.S	/^HandleIRQ:$/;"	l
+HandleNotUsed	head.S	/^HandleNotUsed:$/;"	l
+HandlePrefetchAbort	head.S	/^HandlePrefetchAbort:$/;"	l
+HandleSWI	head.S	/^HandleSWI:$/;"	l
+HandleUndef	head.S	/^HandleUndef:$/;"	l
+IICADD	s3c24xx.h	105;"	d
+IICCON	s3c24xx.h	103;"	d
+IICDS	s3c24xx.h	106;"	d
+IICSTAT	s3c24xx.h	104;"	d
+INBUFSIZE	lib/printf.c	9;"	d	file:
+INCLUDEDIR	Makefile	/^INCLUDEDIR 	:= $(shell pwd)\/include$/;"	m
+INTMOD	s3c24xx.h	73;"	d
+INTMSK	s3c24xx.h	74;"	d
+INTOFFSET	s3c24xx.h	77;"	d
+INTPND	s3c24xx.h	76;"	d
+INTSUBMSK	s3c24xx.h	79;"	d
+INT_MAX	include/kernel.h	1;"	d
+INT_MIN	include/kernel.h	2;"	d
+IRQ_Handle	interrupt.c	/^void IRQ_Handle(void)$/;"	f	signature:(void)
+ISR_ADC_OFT	s3c24xx.h	159;"	d
+ISR_BAT_FLT_OFT	s3c24xx.h	135;"	d
+ISR_DMA0_OFT	s3c24xx.h	145;"	d
+ISR_DMA1_OFT	s3c24xx.h	146;"	d
+ISR_DMA2_OFT	s3c24xx.h	147;"	d
+ISR_DMA3_OFT	s3c24xx.h	148;"	d
+ISR_EINT0_OFT	s3c24xx.h	128;"	d
+ISR_EINT1_OFT	s3c24xx.h	129;"	d
+ISR_EINT2_OFT	s3c24xx.h	130;"	d
+ISR_EINT3_OFT	s3c24xx.h	131;"	d
+ISR_EINT4_7_OFT	s3c24xx.h	132;"	d
+ISR_EINT8_23_OFT	s3c24xx.h	133;"	d
+ISR_IIC_OFT	s3c24xx.h	155;"	d
+ISR_LCD_OFT	s3c24xx.h	144;"	d
+ISR_NOTUSED24_OFT	s3c24xx.h	152;"	d
+ISR_NOTUSED6_OFT	s3c24xx.h	134;"	d
+ISR_RTC_OFT	s3c24xx.h	158;"	d
+ISR_SDI_OFT	s3c24xx.h	149;"	d
+ISR_SPI0_OFT	s3c24xx.h	150;"	d
+ISR_SPI1_OFT	s3c24xx.h	157;"	d
+ISR_TICK_OFT	s3c24xx.h	136;"	d
+ISR_TIMER0_OFT	s3c24xx.h	138;"	d
+ISR_TIMER1_OFT	s3c24xx.h	139;"	d
+ISR_TIMER2_OFT	s3c24xx.h	140;"	d
+ISR_TIMER3_OFT	s3c24xx.h	141;"	d
+ISR_TIMER4_OFT	s3c24xx.h	142;"	d
+ISR_UART0_OFT	s3c24xx.h	156;"	d
+ISR_UART1_OFT	s3c24xx.h	151;"	d
+ISR_UART2_OFT	s3c24xx.h	143;"	d
+ISR_USBD_OFT	s3c24xx.h	153;"	d
+ISR_USBH_OFT	s3c24xx.h	154;"	d
+ISR_WDT_OFT	s3c24xx.h	137;"	d
+LARGE	lib/vsprintf.c	146;"	d	file:
+LCDCON1	s3c24xx.h	109;"	d
+LCDCON2	s3c24xx.h	110;"	d
+LCDCON3	s3c24xx.h	111;"	d
+LCDCON4	s3c24xx.h	112;"	d
+LCDCON5	s3c24xx.h	113;"	d
+LCDFRAMEBUFFER	lcddrv.h	94;"	d
+LCDINTMSK	s3c24xx.h	124;"	d
+LCDINTPND	s3c24xx.h	122;"	d
+LCDSADDR1	s3c24xx.h	114;"	d
+LCDSADDR2	s3c24xx.h	115;"	d
+LCDSADDR3	s3c24xx.h	116;"	d
+LCDSRCPND	s3c24xx.h	123;"	d
+LCDTYPE_TFT	lcddrv.h	20;"	d
+LCD_XSIZE_TFT_240320	lcddrv.h	44;"	d
+LCD_XSIZE_TFT_640480	lcddrv.h	72;"	d
+LCD_YSIZE_TFT_240320	lcddrv.h	45;"	d
+LCD_YSIZE_TFT_640480	lcddrv.h	73;"	d
+LD	Makefile	/^LD      = arm-none-eabi-ld$/;"	m
+LEFT	lib/vsprintf.c	144;"	d	file:
+LINEVAL_TFT_240320	lcddrv.h	49;"	d
+LINEVAL_TFT_640480	lcddrv.h	77;"	d
+LOCKTIME	s3c24xx.h	86;"	d
+LONG_MAX	include/kernel.h	4;"	d
+LONG_MIN	include/kernel.h	5;"	d
+LOWER21BITS	lcddrv.h	11;"	d
+LPCSEL	s3c24xx.h	125;"	d
+Lcd_EnvidOnOff	lcddrv.c	/^void Lcd_EnvidOnOff(int onoff)$/;"	f	signature:(int onoff)
+Lcd_EnvidOnOff	lcddrv.h	/^void Lcd_EnvidOnOff(int onoff);$/;"	p	signature:(int onoff)
+Lcd_Palette8Bit_Init	lcddrv.c	/^void Lcd_Palette8Bit_Init(void)$/;"	f	signature:(void)
+Lcd_Palette8Bit_Init	lcddrv.h	/^void Lcd_Palette8Bit_Init(void);$/;"	p	signature:(void)
+Lcd_Port_Init	lcddrv.c	/^void Lcd_Port_Init(void)$/;"	f	signature:(void)
+Lcd_Port_Init	lcddrv.h	/^void Lcd_Port_Init(void);$/;"	p	signature:(void)
+Lcd_PowerEnable	lcddrv.c	/^void Lcd_PowerEnable(int invpwren, int pwren)$/;"	f	signature:(int invpwren, int pwren)
+Lcd_PowerEnable	lcddrv.h	/^void Lcd_PowerEnable(int invpwren, int pwren);$/;"	p	signature:(int invpwren, int pwren)
+Ldiv0	lib/lib1funcs.S	/^Ldiv0:$/;"	l
+MEM_CTL_BASE	s3c24xx.h	7;"	d
+MODE_TFT_16BIT_240320	lcddrv.h	40;"	d
+MODE_TFT_16BIT_640480	lcddrv.h	68;"	d
+MODE_TFT_1BIT_240320	lcddrv.h	38;"	d
+MODE_TFT_1BIT_640480	lcddrv.h	66;"	d
+MODE_TFT_24BIT_240320	lcddrv.h	41;"	d
+MODE_TFT_24BIT_640480	lcddrv.h	69;"	d
+MODE_TFT_8BIT_240320	lcddrv.h	39;"	d
+MODE_TFT_8BIT_640480	lcddrv.h	67;"	d
+MPLLCON	s3c24xx.h	87;"	d
+Mire	framebuffer.c	/^void Mire(void)$/;"	f	signature:(void)
+Mire	framebuffer.h	/^void Mire(void);$/;"	p	signature:(void)
+NAND_BLOCK_MASK	nand.c	295;"	d	file:
+NAND_SECTOR_SIZE	nand.c	294;"	d	file:
+NATIVE_INT	lib/vsprintf.h	20;"	d
+NFADDR	nand.c	/^    S3C24X0_REG32   NFADDR;$/;"	m	struct:__anon1	file:	access:public
+NFADDR	nand.c	/^    S3C24X0_REG32   NFADDR;$/;"	m	struct:__anon2	file:	access:public
+NFADDR	s3c24xx.h	14;"	d
+NFADDR	s3c24xx.h	21;"	d
+NFCMD	nand.c	/^    S3C24X0_REG32   NFCMD;$/;"	m	struct:__anon1	file:	access:public
+NFCMD	nand.c	/^    S3C24X0_REG32   NFCMD;$/;"	m	struct:__anon2	file:	access:public
+NFCMD	s3c24xx.h	13;"	d
+NFCMD	s3c24xx.h	20;"	d
+NFCONF	nand.c	/^    S3C24X0_REG32   NFCONF;$/;"	m	struct:__anon1	file:	access:public
+NFCONF	nand.c	/^    S3C24X0_REG32   NFCONF;$/;"	m	struct:__anon2	file:	access:public
+NFCONF	s3c24xx.h	12;"	d
+NFCONF	s3c24xx.h	18;"	d
+NFCONT	nand.c	/^    S3C24X0_REG32   NFCONT;$/;"	m	struct:__anon2	file:	access:public
+NFCONT	s3c24xx.h	19;"	d
+NFDATA	nand.c	/^    S3C24X0_REG32   NFDATA;$/;"	m	struct:__anon1	file:	access:public
+NFDATA	nand.c	/^    S3C24X0_REG32   NFDATA;$/;"	m	struct:__anon2	file:	access:public
+NFDATA	s3c24xx.h	15;"	d
+NFDATA	s3c24xx.h	22;"	d
+NFEBLK	nand.c	/^    S3C24X0_REG32   NFEBLK;$/;"	m	struct:__anon2	file:	access:public
+NFECC	nand.c	/^    S3C24X0_REG32   NFECC;$/;"	m	struct:__anon1	file:	access:public
+NFESTAT0	nand.c	/^    S3C24X0_REG32   NFESTAT0;$/;"	m	struct:__anon2	file:	access:public
+NFESTAT1	nand.c	/^    S3C24X0_REG32   NFESTAT1;$/;"	m	struct:__anon2	file:	access:public
+NFMECC0	nand.c	/^    S3C24X0_REG32   NFMECC0;$/;"	m	struct:__anon2	file:	access:public
+NFMECC1	nand.c	/^    S3C24X0_REG32   NFMECC1;$/;"	m	struct:__anon2	file:	access:public
+NFMECCD0	nand.c	/^    S3C24X0_REG32   NFMECCD0;$/;"	m	struct:__anon2	file:	access:public
+NFMECCD1	nand.c	/^    S3C24X0_REG32   NFMECCD1;$/;"	m	struct:__anon2	file:	access:public
+NFSBLK	nand.c	/^    S3C24X0_REG32   NFSBLK;$/;"	m	struct:__anon2	file:	access:public
+NFSECC	nand.c	/^    S3C24X0_REG32   NFSECC;$/;"	m	struct:__anon2	file:	access:public
+NFSECCD	nand.c	/^    S3C24X0_REG32   NFSECCD;$/;"	m	struct:__anon2	file:	access:public
+NFSTAT	nand.c	/^    S3C24X0_REG32   NFSTAT;$/;"	m	struct:__anon1	file:	access:public
+NFSTAT	nand.c	/^    S3C24X0_REG32   NFSTAT;$/;"	m	struct:__anon2	file:	access:public
+NFSTAT	s3c24xx.h	16;"	d
+NFSTAT	s3c24xx.h	23;"	d
+NULL	include/types.h	6;"	d
+OBJCOPY	Makefile	/^OBJCOPY = arm-none-eabi-objcopy$/;"	m
+OBJDUMP	Makefile	/^OBJDUMP = arm-none-eabi-objdump$/;"	m
+OUTBUFSIZE	lib/printf.c	8;"	d	file:
+PALETTE	s3c24xx.h	126;"	d
+PCLK	init.c	23;"	d	file:
+PCLK	serial.c	7;"	d	file:
+PLUS	lib/vsprintf.c	142;"	d	file:
+PRIORITY	s3c24xx.h	75;"	d
+PutPixel	framebuffer.c	/^void PutPixel(UINT32 x, UINT32 y, UINT32 color)$/;"	f	signature:(UINT32 x, UINT32 y, UINT32 color)
+PutPixel	framebuffer.h	/^void PutPixel(UINT32 x, UINT32 y, UINT32 color);$/;"	p	signature:(UINT32 x, UINT32 y, UINT32 color)
+REDLUT	s3c24xx.h	117;"	d
+RXD0READY	serial.c	5;"	d	file:
+Reset	head.S	/^Reset:                  $/;"	l
+S3C2410_MPLL_200MHZ	init.c	24;"	d	file:
+S3C2410_NAND	nand.c	/^} S3C2410_NAND;$/;"	t	typeref:struct:__anon1	file:
+S3C2440_MPLL_200MHZ	init.c	25;"	d	file:
+S3C2440_NAND	nand.c	/^} S3C2440_NAND;$/;"	t	typeref:struct:__anon2	file:
+S3C24X0_REG32	nand.c	/^typedef unsigned int S3C24X0_REG32;$/;"	t	file:
+SDRAM_BASE	s3c24xx.h	8;"	d
+SIGN	lib/vsprintf.c	141;"	d	file:
+SI_TYPE_SIZE	include/gcclib.h	5;"	d
+SItype	include/gcclib.h	/^typedef          int SItype     __attribute__ ((mode (SI)));$/;"	t
+SPACE	lib/vsprintf.c	143;"	d	file:
+SPECIAL	lib/vsprintf.c	145;"	d	file:
+SRCPND	s3c24xx.h	72;"	d
+SUBSRCPND	s3c24xx.h	78;"	d
+TACLS	nand.c	255;"	d	file:
+TCFG0	s3c24xx.h	95;"	d
+TCFG1	s3c24xx.h	96;"	d
+TCMPB0	s3c24xx.h	99;"	d
+TCNTB0	s3c24xx.h	98;"	d
+TCNTO0	s3c24xx.h	100;"	d
+TCON	s3c24xx.h	97;"	d
+TPAL	s3c24xx.h	121;"	d
+TWRPH0	nand.c	256;"	d	file:
+TWRPH1	nand.c	257;"	d	file:
+TXD0READY	serial.c	4;"	d	file:
+Test_Lcd_Tft_16Bit_240320	lcdlib.c	/^void Test_Lcd_Tft_16Bit_240320(void)$/;"	f	signature:(void)
+Test_Lcd_Tft_16Bit_640480	lcdlib.c	/^void Test_Lcd_Tft_16Bit_640480(void)$/;"	f	signature:(void)
+Test_Lcd_Tft_16Bit_640480	lcdlib.h	/^void Test_Lcd_Tft_16Bit_640480(void);$/;"	p	signature:(void)
+Test_Lcd_Tft_8Bit_240320	lcdlib.c	/^void Test_Lcd_Tft_8Bit_240320(void)$/;"	f	signature:(void)
+Test_Lcd_Tft_8Bit_640480	lcdlib.c	/^void Test_Lcd_Tft_8Bit_640480(void)$/;"	f	signature:(void)
+Test_Lcd_Tft_8Bit_640480	lcdlib.h	/^void Test_Lcd_Tft_8Bit_640480(void);$/;"	p	signature:(void)
+Tft_Lcd_Init	lcddrv.c	/^void Tft_Lcd_Init(int type)$/;"	f	signature:(int type)
+Tft_Lcd_Init	lcddrv.h	/^void Tft_Lcd_Init(int type);$/;"	p	signature:(int type)
+UART_BAUD_RATE	serial.c	9;"	d	file:
+UART_BRD	serial.c	10;"	d	file:
+UART_CLK	serial.c	8;"	d	file:
+UBRDIV0	s3c24xx.h	68;"	d
+UCON0	s3c24xx.h	62;"	d
+UDBG_BADABORT	include/system.h	124;"	d
+UDBG_BUS	include/system.h	126;"	d
+UDBG_SEGV	include/system.h	125;"	d
+UDBG_SYSCALL	include/system.h	123;"	d
+UDBG_UNDEFINED	include/system.h	122;"	d
+UDItype	include/gcclib.h	/^typedef unsigned int UDItype    __attribute__ ((mode (DI)));$/;"	t
+UFCON0	s3c24xx.h	63;"	d
+UINT16	include/types.h	14;"	d
+UINT32	include/types.h	10;"	d
+UINT8	include/types.h	18;"	d
+UINT_MAX	include/kernel.h	3;"	d
+ULCON0	s3c24xx.h	61;"	d
+ULONG_MAX	include/kernel.h	6;"	d
+UMCON0	s3c24xx.h	64;"	d
+UPLLCON	s3c24xx.h	88;"	d
+UQItype	include/gcclib.h	/^typedef unsigned int UQItype    __attribute__ ((mode (QI)));$/;"	t
+URXH0	s3c24xx.h	67;"	d
+USItype	include/gcclib.h	/^typedef unsigned int USItype    __attribute__ ((mode (SI)));$/;"	t
+UTRSTAT0	s3c24xx.h	65;"	d
+UTXH0	s3c24xx.h	66;"	d
+VBPD_240320	lcddrv.h	56;"	d
+VBPD_640480	lcddrv.h	80;"	d
+VFPD_240320	lcddrv.h	57;"	d
+VFPD_640480	lcddrv.h	81;"	d
+VSPW_240320	lcddrv.h	58;"	d
+VSPW_640480	lcddrv.h	82;"	d
+VSYNC_INV	lcddrv.h	32;"	d
+VSYNC_NORM	lcddrv.h	31;"	d
+WTCNT	s3c24xx.h	4;"	d
+WTCON	s3c24xx.h	2;"	d
+WTDAT	s3c24xx.h	3;"	d
+ZEROPAD	lib/vsprintf.c	140;"	d	file:
+_ADNBND	lib/vsprintf.h	22;"	d
+_AUPBND	lib/vsprintf.h	21;"	d
+_C	include/ctype.h	9;"	d
+_D	include/ctype.h	8;"	d
+_L	include/ctype.h	7;"	d
+_P	include/ctype.h	10;"	d
+_PRINTF_H	lib/printf.h	3;"	d
+_S	include/ctype.h	11;"	d
+_SIZE_T	include/types.h	22;"	d
+_SP	include/ctype.h	13;"	d
+_STDIO_H	include/stdio.h	3;"	d
+_TPYES_H	include/types.h	3;"	d
+_U	include/ctype.h	6;"	d
+_VALIST	include/stdio.h	8;"	d
+_VALIST	lib/vsprintf.h	13;"	d
+_X	include/ctype.h	12;"	d
+__ASM_ARM_DIV64	lib/div64.h	2;"	d
+__ASM_ARM_SYSTEM_H	include/system.h	2;"	d
+__FRAMEBUFFER_H__	framebuffer.h	7;"	d
+__LCDDRV_H__	lcddrv.h	7;"	d
+__LCDLIB_H__	lcdlib.h	7;"	d
+__LINUX_ARM_ARCH__	lib/div64.S	/^#define __LINUX_ARM_ARCH__  1$/;"	d
+__LINUX_ARM_ARCH__	lib/lib1funcs.S	/^#define __LINUX_ARM_ARCH__  1$/;"	d
+___strtok	lib/string.c	/^char * ___strtok;$/;"	v
+__anon1::NFADDR	nand.c	/^    S3C24X0_REG32   NFADDR;$/;"	m	struct:__anon1	file:	access:public
+__anon1::NFCMD	nand.c	/^    S3C24X0_REG32   NFCMD;$/;"	m	struct:__anon1	file:	access:public
+__anon1::NFCONF	nand.c	/^    S3C24X0_REG32   NFCONF;$/;"	m	struct:__anon1	file:	access:public
+__anon1::NFDATA	nand.c	/^    S3C24X0_REG32   NFDATA;$/;"	m	struct:__anon1	file:	access:public
+__anon1::NFECC	nand.c	/^    S3C24X0_REG32   NFECC;$/;"	m	struct:__anon1	file:	access:public
+__anon1::NFSTAT	nand.c	/^    S3C24X0_REG32   NFSTAT;$/;"	m	struct:__anon1	file:	access:public
+__anon2::NFADDR	nand.c	/^    S3C24X0_REG32   NFADDR;$/;"	m	struct:__anon2	file:	access:public
+__anon2::NFCMD	nand.c	/^    S3C24X0_REG32   NFCMD;$/;"	m	struct:__anon2	file:	access:public
+__anon2::NFCONF	nand.c	/^    S3C24X0_REG32   NFCONF;$/;"	m	struct:__anon2	file:	access:public
+__anon2::NFCONT	nand.c	/^    S3C24X0_REG32   NFCONT;$/;"	m	struct:__anon2	file:	access:public
+__anon2::NFDATA	nand.c	/^    S3C24X0_REG32   NFDATA;$/;"	m	struct:__anon2	file:	access:public
+__anon2::NFEBLK	nand.c	/^    S3C24X0_REG32   NFEBLK;$/;"	m	struct:__anon2	file:	access:public
+__anon2::NFESTAT0	nand.c	/^    S3C24X0_REG32   NFESTAT0;$/;"	m	struct:__anon2	file:	access:public
+__anon2::NFESTAT1	nand.c	/^    S3C24X0_REG32   NFESTAT1;$/;"	m	struct:__anon2	file:	access:public
+__anon2::NFMECC0	nand.c	/^    S3C24X0_REG32   NFMECC0;$/;"	m	struct:__anon2	file:	access:public
+__anon2::NFMECC1	nand.c	/^    S3C24X0_REG32   NFMECC1;$/;"	m	struct:__anon2	file:	access:public
+__anon2::NFMECCD0	nand.c	/^    S3C24X0_REG32   NFMECCD0;$/;"	m	struct:__anon2	file:	access:public
+__anon2::NFMECCD1	nand.c	/^    S3C24X0_REG32   NFMECCD1;$/;"	m	struct:__anon2	file:	access:public
+__anon2::NFSBLK	nand.c	/^    S3C24X0_REG32   NFSBLK;$/;"	m	struct:__anon2	file:	access:public
+__anon2::NFSECC	nand.c	/^    S3C24X0_REG32   NFSECC;$/;"	m	struct:__anon2	file:	access:public
+__anon2::NFSECCD	nand.c	/^    S3C24X0_REG32   NFSECCD;$/;"	m	struct:__anon2	file:	access:public
+__anon2::NFSTAT	nand.c	/^    S3C24X0_REG32   NFSTAT;$/;"	m	struct:__anon2	file:	access:public
+__anon3::nand_deselect_chip	nand.c	/^    void (*nand_deselect_chip)(void);$/;"	m	struct:__anon3	file:	access:public
+__anon3::nand_reset	nand.c	/^    void (*nand_reset)(void);$/;"	m	struct:__anon3	file:	access:public
+__anon3::nand_select_chip	nand.c	/^    void (*nand_select_chip)(void);$/;"	m	struct:__anon3	file:	access:public
+__anon3::read_data	nand.c	/^    unsigned char (*read_data)(void);$/;"	m	struct:__anon3	file:	access:public
+__anon3::wait_idle	nand.c	/^    void (*wait_idle)(void);$/;"	m	struct:__anon3	file:	access:public
+__anon3::write_addr	nand.c	/^    void (*write_addr)(unsigned int addr);$/;"	m	struct:__anon3	file:	access:public
+__anon3::write_cmd	nand.c	/^    void (*write_cmd)(int cmd);$/;"	m	struct:__anon3	file:	access:public
+__anon4::ll	include/gcclib.h	/^  DItype ll;$/;"	m	union:__anon4	access:public
+__anon4::s	include/gcclib.h	/^  struct DIstruct s;$/;"	m	union:__anon4	typeref:struct:__anon4::DIstruct	access:public
+__asmeq	include/system.h	68;"	d
+__asmeq	lib/div64.h	30;"	d
+__backtrace	include/system.h	/^extern asmlinkage void __backtrace(void);$/;"	p	signature:(void)
+__ismask	include/ctype.h	17;"	d
+__muldi3	lib/muldi3.c	/^__muldi3 (DItype u, DItype v)$/;"	f	signature:(DItype u, DItype v)
+__switch_to	include/system.h	/^extern struct task_struct *__switch_to(struct task_struct *, struct thread_info *, struct thread_info *);$/;"	p	signature:(struct task_struct *, struct thread_info *, struct thread_info *)
+__tolower	include/ctype.h	/^static inline unsigned char __tolower(unsigned char c)$/;"	f	signature:(unsigned char c)
+__toupper	include/ctype.h	/^static inline unsigned char __toupper(unsigned char c)$/;"	f	signature:(unsigned char c)
+__umulsidi3	lib/muldi3.c	56;"	d	file:
+__xchg	include/system.h	/^static inline unsigned long __xchg(unsigned long x, volatile void *ptr, int size)$/;"	f	signature:(unsigned long x, volatile void *ptr, int size)
+__xh	lib/div64.h	23;"	d
+__xh	lib/div64.h	27;"	d
+__xl	lib/div64.h	24;"	d
+__xl	lib/div64.h	26;"	d
+_bnd	lib/vsprintf.h	28;"	d
+_ctype	lib/ctype.c	/^unsigned char _ctype[] = {$/;"	v
+_start	head.S	/^_start:$/;"	l
+bcopy	lib/string.c	/^void bcopy(const void *src, void *dest, size_t count)$/;"	f	signature:(const void *src, void *dest, size_t count)
+bpp	lcddrv.c	/^unsigned int bpp;$/;"	v
+clean_bss	init.c	/^void clean_bss(void)$/;"	f	signature:(void)
+clean_bss	init.c	/^void clean_bss(void);$/;"	p	file:	signature:(void)
+clock_init	init.c	/^void clock_init(void)$/;"	f	signature:(void)
+clock_init	init.c	/^void clock_init(void);$/;"	p	file:	signature:(void)
+copy_steppingstone_to_sdram	init.c	/^void copy_steppingstone_to_sdram(void)$/;"	f	signature:(void)
+copy_steppingstone_to_sdram	init.c	/^void copy_steppingstone_to_sdram(void);$/;"	p	file:	signature:(void)
+cpu_architecture	include/system.h	/^extern int cpu_architecture(void);$/;"	p	signature:(void)
+die	include/system.h	/^void die(const char *msg, struct pt_regs *regs, int err)$/;"	p	signature:(const char *msg, struct pt_regs *regs, int err)
+die_if_kernel	include/system.h	/^void die_if_kernel(const char *str, struct pt_regs *regs, int err);$/;"	p	signature:(const char *str, struct pt_regs *regs, int err)
+disable_watch_dog	init.c	/^void disable_watch_dog(void)$/;"	f	signature:(void)
+disable_watch_dog	init.c	/^void disable_watch_dog(void);$/;"	p	file:	signature:(void)
+do_div	lib/div64.h	32;"	d
+fb_base_addr	lcddrv.c	/^unsigned int fb_base_addr;$/;"	v
+finish_arch_switch	include/system.h	157;"	d
+finish_arch_switch	include/system.h	169;"	d
+g_pcInBuf	lib/printf.c	/^static unsigned char g_pcInBuf[INBUFSIZE];$/;"	v	file:
+g_pcOutBuf	lib/printf.c	/^static unsigned char g_pcOutBuf[OUTBUFSIZE];$/;"	v	file:
+get_cr	include/system.h	110;"	d
+getc	include/stdio.h	/^extern unsigned char getc(void);$/;"	p	signature:(void)
+getc	lib/printf.c	/^extern unsigned char getc(void);$/;"	p	file:	signature:(void)
+getc	serial.c	/^unsigned char getc(void)$/;"	f	signature:(void)
+getc	serial.h	/^unsigned char getc(void);$/;"	p	signature:(void)
+halt_loop	head.S	/^halt_loop:$/;"	l
+high	include/gcclib.h	/^  struct DIstruct {SItype high, low;};$/;"	m	struct:DIstruct	access:public
+high	include/gcclib.h	/^  struct DIstruct {SItype low, high;};$/;"	m	struct:DIstruct	access:public
+hook_fault_code	include/system.h	/^void hook_fault_code(int nr, int (*fn)(unsigned long, unsigned int,$/;"	p	signature:(int nr, int (*fn)(unsigned long, unsigned int, struct pt_regs *), int sig, const char *name)
+init_irq	interrupt.c	/^void init_irq(void)$/;"	f	signature:(void)
+int_return	head.S	/^int_return:$/;"	l
+irqs_disabled	include/system.h	303;"	d
+isDigit	serial.c	/^int isDigit(unsigned char c)$/;"	f	signature:(unsigned char c)
+isDigit	serial.h	/^int isDigit(unsigned char c);$/;"	p	signature:(unsigned char c)
+isLetter	serial.c	/^int isLetter(unsigned char c)$/;"	f	signature:(unsigned char c)
+isLetter	serial.h	/^int isLetter(unsigned char c);$/;"	p	signature:(unsigned char c)
+isalnum	include/ctype.h	19;"	d
+isalpha	include/ctype.h	20;"	d
+isascii	include/ctype.h	31;"	d
+iscntrl	include/ctype.h	21;"	d
+isdigit	include/ctype.h	22;"	d
+isgraph	include/ctype.h	23;"	d
+islower	include/ctype.h	24;"	d
+isprint	include/ctype.h	25;"	d
+ispunct	include/ctype.h	26;"	d
+isr_handle_array	interrupt.c	/^void (*isr_handle_array[50])(void);$/;"	v
+isspace	include/ctype.h	27;"	d
+isupper	include/ctype.h	28;"	d
+isxdigit	include/ctype.h	29;"	d
+ll	include/gcclib.h	/^  DItype ll;$/;"	m	union:__anon4	access:public
+local_fiq_disable	include/system.h	201;"	d
+local_fiq_disable	include/system.h	269;"	d
+local_fiq_enable	include/system.h	200;"	d
+local_fiq_enable	include/system.h	254;"	d
+local_irq_disable	include/system.h	199;"	d
+local_irq_disable	include/system.h	239;"	d
+local_irq_enable	include/system.h	198;"	d
+local_irq_enable	include/system.h	224;"	d
+local_irq_restore	include/system.h	296;"	d
+local_irq_save	include/system.h	190;"	d
+local_irq_save	include/system.h	208;"	d
+local_save_flags	include/system.h	286;"	d
+low	include/gcclib.h	/^  struct DIstruct {SItype high, low;};$/;"	m	struct:DIstruct	access:public
+low	include/gcclib.h	/^  struct DIstruct {SItype low, high;};$/;"	m	struct:DIstruct	access:public
+main	main.c	/^int main()$/;"	f
+mb	include/system.h	136;"	d
+memchr	include/string.h	/^extern void * memchr(const void *,int,size_t);$/;"	p	signature:(const void *,int,size_t)
+memchr	lib/string.c	/^void *memchr(const void *s, int c, size_t n)$/;"	f	signature:(const void *s, int c, size_t n)
+memcmp	include/string.h	/^extern int memcmp(const void *,const void *,size_t);$/;"	p	signature:(const void *,const void *,size_t)
+memcmp	lib/string.c	/^int memcmp(const void * cs,const void * ct,size_t count)$/;"	f	signature:(const void * cs,const void * ct,size_t count)
+memcpy	include/string.h	/^extern void * memcpy(void *,const void *,size_t);$/;"	p	signature:(void *,const void *,size_t)
+memcpy	lib/string.c	/^void * memcpy(void * dest,const void *src,size_t count)$/;"	f	signature:(void * dest,const void *src,size_t count)
+memmove	include/string.h	/^extern void * memmove(void *,const void *,size_t);$/;"	p	signature:(void *,const void *,size_t)
+memmove	lib/string.c	/^void * memmove(void * dest,const void *src,size_t count)$/;"	f	signature:(void * dest,const void *src,size_t count)
+memscan	include/string.h	/^extern void * memscan(void *,int,size_t);$/;"	p	signature:(void *,int,size_t)
+memscan	lib/string.c	/^void * memscan(void * addr, int c, size_t size)$/;"	f	signature:(void * addr, int c, size_t size)
+memset	include/string.h	/^extern void * memset(void *,int,size_t);$/;"	p	signature:(void *,int,size_t)
+memset	lib/string.c	/^void * memset(void * s,int c,size_t count)$/;"	f	signature:(void * s,int c,size_t count)
+memsetup	init.c	/^void memsetup(void)$/;"	f	signature:(void)
+memsetup	init.c	/^void memsetup(void);$/;"	p	file:	signature:(void)
+name	lib/div64.S	/^  name:$/;"	l
+name	lib/lib1funcs.S	/^  name:$/;"	l
+nand_chip	nand.c	/^static t_nand_chip nand_chip;$/;"	v	file:
+nand_deselect_chip	nand.c	/^    void (*nand_deselect_chip)(void);$/;"	m	struct:__anon3	file:	access:public
+nand_deselect_chip	nand.c	/^static void nand_deselect_chip(void)$/;"	f	file:	signature:(void)
+nand_deselect_chip	nand.c	/^static void nand_deselect_chip(void);$/;"	p	file:	signature:(void)
+nand_init	nand.c	/^void nand_init(void)$/;"	f	signature:(void)
+nand_init	nand.c	/^void nand_init(void);$/;"	p	file:	signature:(void)
+nand_read	nand.c	/^void nand_read(unsigned char *buf, unsigned long start_addr, int size)$/;"	f	signature:(unsigned char *buf, unsigned long start_addr, int size)
+nand_read	nand.c	/^void nand_read(unsigned char *buf, unsigned long start_addr, int size);$/;"	p	file:	signature:(unsigned char *buf, unsigned long start_addr, int size)
+nand_reset	nand.c	/^    void (*nand_reset)(void);$/;"	m	struct:__anon3	file:	access:public
+nand_reset	nand.c	/^static void nand_reset(void)$/;"	f	file:	signature:(void)
+nand_reset	nand.c	/^static void nand_reset(void);$/;"	p	file:	signature:(void)
+nand_select_chip	nand.c	/^    void (*nand_select_chip)(void);$/;"	m	struct:__anon3	file:	access:public
+nand_select_chip	nand.c	/^static void nand_select_chip(void)$/;"	f	file:	signature:(void)
+nand_select_chip	nand.c	/^static void nand_select_chip(void);$/;"	p	file:	signature:(void)
+nop	include/system.h	142;"	d
+number	lib/vsprintf.c	/^static char * number(char * buf, char * end, unsigned long long num, int base, int size, int precision, int type)$/;"	f	file:	signature:(char * buf, char * end, unsigned long long num, int base, int size, int precision, int type)
+objs	Makefile	/^objs := head.o init.o nand.o interrupt.o serial.o lcddrv.o framebuffer.o lcdlib.o main.o lib\/libc.a$/;"	m
+objs	lib/Makefile	/^objs := div64.o lib1funcs.o ctype.o muldi3.o printf.o string.o vsprintf.o$/;"	m
+prepare_arch_switch	include/system.h	151;"	d
+prepare_arch_switch	include/system.h	168;"	d
+printf	include/stdio.h	/^int printf(const char *fmt, ...);$/;"	p	signature:(const char *fmt, ...)
+printf	lib/printf.c	/^int printf(const char *fmt, ...)$/;"	f	signature:(const char *fmt, ...)
+printf	lib/printf.h	/^int printf(const char *fmt, ...);$/;"	p	signature:(const char *fmt, ...)
+putc	include/stdio.h	/^extern void putc(unsigned char c);$/;"	p	signature:(unsigned char c)
+putc	lib/printf.c	/^extern void putc(unsigned char c);$/;"	p	file:	signature:(unsigned char c)
+putc	lib/string.c	/^extern void putc(unsigned char c);$/;"	p	file:	signature:(unsigned char c)
+putc	serial.c	/^void putc(unsigned char c)$/;"	f	signature:(unsigned char c)
+putc	serial.h	/^void putc(unsigned char c);$/;"	p	signature:(unsigned char c)
+putchar	include/string.h	/^extern int putchar(int c);$/;"	p	signature:(int c)
+putchar	lib/string.c	/^int putchar(int c)$/;"	f	signature:(int c)
+puts	include/string.h	/^extern int puts(const char *s);$/;"	p	signature:(const char *s)
+puts	lib/string.c	/^int puts(const char *s)$/;"	f	signature:(const char *s)
+read_barrier_depends	include/system.h	139;"	d
+read_cpuid	include/system.h	50;"	d
+read_data	nand.c	/^    unsigned char (*read_data)(void);$/;"	m	struct:__anon3	file:	access:public
+read_data	nand.c	/^static unsigned char read_data(void)$/;"	f	file:	signature:(void)
+read_data	nand.c	/^static unsigned char read_data(void);$/;"	p	file:	signature:(void)
+ret_initirq	head.S	/^ret_initirq:$/;"	l
+rmb	include/system.h	137;"	d
+s	include/gcclib.h	/^  struct DIstruct s;$/;"	m	union:__anon4	typeref:struct:__anon4::DIstruct	access:public
+s3c2410_nand_deselect_chip	nand.c	/^static void s3c2410_nand_deselect_chip(void)$/;"	f	file:	signature:(void)
+s3c2410_nand_deselect_chip	nand.c	/^static void s3c2410_nand_deselect_chip(void);$/;"	p	file:	signature:(void)
+s3c2410_nand_reset	nand.c	/^static void s3c2410_nand_reset(void)$/;"	f	file:	signature:(void)
+s3c2410_nand_reset	nand.c	/^static void s3c2410_nand_reset(void);$/;"	p	file:	signature:(void)
+s3c2410_nand_select_chip	nand.c	/^static void s3c2410_nand_select_chip(void)$/;"	f	file:	signature:(void)
+s3c2410_nand_select_chip	nand.c	/^static void s3c2410_nand_select_chip(void);$/;"	p	file:	signature:(void)
+s3c2410_read_data	nand.c	/^static unsigned char s3c2410_read_data();$/;"	p	file:
+s3c2410_read_data	nand.c	/^static unsigned char s3c2410_read_data(void)$/;"	f	file:	signature:(void)
+s3c2410_wait_idle	nand.c	/^static void s3c2410_wait_idle(void)$/;"	f	file:	signature:(void)
+s3c2410_wait_idle	nand.c	/^static void s3c2410_wait_idle(void);$/;"	p	file:	signature:(void)
+s3c2410_write_addr	nand.c	/^static void s3c2410_write_addr(unsigned int addr)$/;"	f	file:	signature:(unsigned int addr)
+s3c2410_write_addr	nand.c	/^static void s3c2410_write_addr(unsigned int addr);$/;"	p	file:	signature:(unsigned int addr)
+s3c2410_write_cmd	nand.c	/^static void s3c2410_write_cmd(int cmd)$/;"	f	file:	signature:(int cmd)
+s3c2410_write_cmd	nand.c	/^static void s3c2410_write_cmd(int cmd);$/;"	p	file:	signature:(int cmd)
+s3c2410nand	nand.c	/^static S3C2410_NAND * s3c2410nand = (S3C2410_NAND *)0x4e000000;$/;"	v	file:
+s3c2440_nand_deselect_chip	nand.c	/^static void s3c2440_nand_deselect_chip(void)$/;"	f	file:	signature:(void)
+s3c2440_nand_deselect_chip	nand.c	/^static void s3c2440_nand_deselect_chip(void);$/;"	p	file:	signature:(void)
+s3c2440_nand_reset	nand.c	/^static void s3c2440_nand_reset(void)$/;"	f	file:	signature:(void)
+s3c2440_nand_reset	nand.c	/^static void s3c2440_nand_reset(void);$/;"	p	file:	signature:(void)
+s3c2440_nand_select_chip	nand.c	/^static void s3c2440_nand_select_chip(void)$/;"	f	file:	signature:(void)
+s3c2440_nand_select_chip	nand.c	/^static void s3c2440_nand_select_chip(void);$/;"	p	file:	signature:(void)
+s3c2440_read_data	nand.c	/^static unsigned char s3c2440_read_data(void)$/;"	f	file:	signature:(void)
+s3c2440_read_data	nand.c	/^static unsigned char s3c2440_read_data(void);$/;"	p	file:	signature:(void)
+s3c2440_wait_idle	nand.c	/^static void s3c2440_wait_idle(void)$/;"	f	file:	signature:(void)
+s3c2440_wait_idle	nand.c	/^static void s3c2440_wait_idle(void);$/;"	p	file:	signature:(void)
+s3c2440_write_addr	nand.c	/^static void s3c2440_write_addr(unsigned int addr)$/;"	f	file:	signature:(unsigned int addr)
+s3c2440_write_addr	nand.c	/^static void s3c2440_write_addr(unsigned int addr);$/;"	p	file:	signature:(unsigned int addr)
+s3c2440_write_cmd	nand.c	/^static void s3c2440_write_cmd(int cmd)$/;"	f	file:	signature:(int cmd)
+s3c2440_write_cmd	nand.c	/^static void s3c2440_write_cmd(int cmd);$/;"	p	file:	signature:(int cmd)
+s3c2440nand	nand.c	/^static S3C2440_NAND * s3c2440nand = (S3C2440_NAND *)0x4e000000;$/;"	v	file:
+scanf	include/stdio.h	/^int scanf(const char * fmt, ...);$/;"	p	signature:(const char * fmt, ...)
+scanf	lib/printf.c	/^int scanf(const char * fmt, ...)$/;"	f	signature:(const char * fmt, ...)
+scanf	lib/printf.h	/^int scanf(const char * fmt, ...);$/;"	p	signature:(const char * fmt, ...)
+scnprintf	lib/vsprintf.c	/^int scnprintf(char * buf, size_t size, const char *fmt, ...)$/;"	f	signature:(char * buf, size_t size, const char *fmt, ...)
+set_cr	include/system.h	105;"	d
+set_mb	include/system.h	140;"	d
+set_wmb	include/system.h	141;"	d
+simple_strtol	lib/vsprintf.c	/^long simple_strtol(const char *cp,char **endp,unsigned int base)$/;"	f	signature:(const char *cp,char **endp,unsigned int base)
+simple_strtol	lib/vsprintf.h	/^long simple_strtol(const char *cp,char **endp,unsigned int base);$/;"	p	signature:(const char *cp,char **endp,unsigned int base)
+simple_strtoll	lib/vsprintf.c	/^long long simple_strtoll(const char *cp,char **endp,unsigned int base)$/;"	f	signature:(const char *cp,char **endp,unsigned int base)
+simple_strtoll	lib/vsprintf.h	/^long long simple_strtoll(const char *cp,char **endp,unsigned int base);$/;"	p	signature:(const char *cp,char **endp,unsigned int base)
+simple_strtoul	lib/vsprintf.c	/^unsigned long simple_strtoul(const char *cp,char **endp,unsigned int base)$/;"	f	signature:(const char *cp,char **endp,unsigned int base)
+simple_strtoul	lib/vsprintf.h	/^unsigned long simple_strtoul(const char *cp,char **endp,unsigned int base);$/;"	p	signature:(const char *cp,char **endp,unsigned int base)
+simple_strtoull	lib/vsprintf.c	/^unsigned long long simple_strtoull(const char *cp,char **endp,unsigned int base)$/;"	f	signature:(const char *cp,char **endp,unsigned int base)
+simple_strtoull	lib/vsprintf.h	/^unsigned long long simple_strtoull(const char *cp,char **endp,unsigned int base);$/;"	p	signature:(const char *cp,char **endp,unsigned int base)
+size_t	include/types.h	/^typedef unsigned int size_t;$/;"	t
+skip_atoi	lib/vsprintf.c	/^static int skip_atoi(const char **s)$/;"	f	file:	signature:(const char **s)
+smp_mb	include/system.h	313;"	d
+smp_mb	include/system.h	320;"	d
+smp_read_barrier_depends	include/system.h	316;"	d
+smp_read_barrier_depends	include/system.h	323;"	d
+smp_rmb	include/system.h	314;"	d
+smp_rmb	include/system.h	321;"	d
+smp_wmb	include/system.h	315;"	d
+smp_wmb	include/system.h	322;"	d
+snprintf	include/stdio.h	/^extern int snprintf(char * buf, size_t size, const char *fmt, ...);$/;"	p	signature:(char * buf, size_t size, const char *fmt, ...)
+snprintf	lib/vsprintf.c	/^int snprintf(char * buf, size_t size, const char *fmt, ...)$/;"	f	signature:(char * buf, size_t size, const char *fmt, ...)
+snprintf	lib/vsprintf.h	/^int snprintf(char * buf, size_t size, const char *fmt, ...);$/;"	p	signature:(char * buf, size_t size, const char *fmt, ...)
+sprintf	include/stdio.h	/^extern int sprintf(char * buf, const char *fmt, ...);$/;"	p	signature:(char * buf, const char *fmt, ...)
+sprintf	lib/vsprintf.c	/^int sprintf(char * buf, const char *fmt, ...)$/;"	f	signature:(char * buf, const char *fmt, ...)
+sprintf	lib/vsprintf.h	/^int sprintf(char * buf, const char *fmt, ...);$/;"	p	signature:(char * buf, const char *fmt, ...)
+sscanf	include/stdio.h	/^extern int sscanf(const char * buf, const char * fmt, ...);$/;"	p	signature:(const char * buf, const char * fmt, ...)
+sscanf	lib/vsprintf.c	/^int sscanf(const char * buf, const char * fmt, ...)$/;"	f	signature:(const char * buf, const char * fmt, ...)
+sscanf	lib/vsprintf.h	/^int sscanf(const char * buf, const char * fmt, ...);$/;"	p	signature:(const char * buf, const char * fmt, ...)
+strcat	include/string.h	/^extern char * strcat(char *, const char *);$/;"	p	signature:(char *, const char *)
+strcat	lib/string.c	/^char * strcat(char * dest, const char * src)$/;"	f	signature:(char * dest, const char * src)
+strchr	include/string.h	/^extern char * strchr(const char *,int);$/;"	p	signature:(const char *,int)
+strchr	lib/string.c	/^char * strchr(const char * s, int c)$/;"	f	signature:(const char * s, int c)
+strcmp	include/string.h	/^extern int strcmp(const char *,const char *);$/;"	p	signature:(const char *,const char *)
+strcmp	lib/string.c	/^int strcmp(const char * cs,const char * ct)$/;"	f	signature:(const char * cs,const char * ct)
+strcpy	include/string.h	/^extern char * strcpy(char *,const char *);$/;"	p	signature:(char *,const char *)
+strcpy	lib/string.c	/^char * strcpy(char * dest,const char *src)$/;"	f	signature:(char * dest,const char *src)
+strlen	include/string.h	/^extern size_t strlen(const char *);$/;"	p	signature:(const char *)
+strlen	lib/string.c	/^size_t strlen(const char * s)$/;"	f	signature:(const char * s)
+strncat	include/string.h	/^extern char * strncat(char *, const char *, size_t);$/;"	p	signature:(char *, const char *, size_t)
+strncat	lib/string.c	/^char * strncat(char *dest, const char *src, size_t count)$/;"	f	signature:(char *dest, const char *src, size_t count)
+strncmp	include/string.h	/^extern int strncmp(const char *,const char *,size_t);$/;"	p	signature:(const char *,const char *,size_t)
+strncmp	lib/string.c	/^int strncmp(const char * cs,const char * ct,size_t count)$/;"	f	signature:(const char * cs,const char * ct,size_t count)
+strncpy	include/string.h	/^extern char * strncpy(char *,const char *, size_t);$/;"	p	signature:(char *,const char *, size_t)
+strncpy	lib/string.c	/^char * strncpy(char * dest,const char *src,size_t count)$/;"	f	signature:(char * dest,const char *src,size_t count)
+strnicmp	include/string.h	/^extern int strnicmp(const char *, const char *, size_t);$/;"	p	signature:(const char *, const char *, size_t)
+strnicmp	lib/string.c	/^int strnicmp(const char *s1, const char *s2, size_t len)$/;"	f	signature:(const char *s1, const char *s2, size_t len)
+strnlen	include/string.h	/^extern size_t strnlen(const char *,size_t);$/;"	p	signature:(const char *,size_t)
+strnlen	lib/string.c	/^size_t strnlen(const char * s, size_t count)$/;"	f	signature:(const char * s, size_t count)
+strpbrk	include/string.h	/^extern char * strpbrk(const char *,const char *);$/;"	p	signature:(const char *,const char *)
+strpbrk	lib/string.c	/^char * strpbrk(const char * cs,const char * ct)$/;"	f	signature:(const char * cs,const char * ct)
+strrchr	include/string.h	/^extern char * strrchr(const char *,int);$/;"	p	signature:(const char *,int)
+strrchr	lib/string.c	/^char * strrchr(const char * s, int c)$/;"	f	signature:(const char * s, int c)
+strsep	include/string.h	/^extern char * strsep(char **,const char *);$/;"	p	signature:(char **,const char *)
+strsep	lib/string.c	/^char * strsep(char **s, const char *ct)$/;"	f	signature:(char **s, const char *ct)
+strspn	include/string.h	/^extern size_t strspn(const char *,const char *);$/;"	p	signature:(const char *,const char *)
+strspn	lib/string.c	/^size_t strspn(const char *s, const char *accept)$/;"	f	signature:(const char *s, const char *accept)
+strstr	include/string.h	/^extern char * strstr(const char *,const char *);$/;"	p	signature:(const char *,const char *)
+strstr	lib/string.c	/^char * strstr(const char * s1,const char * s2)$/;"	f	signature:(const char * s1,const char * s2)
+strtok	include/string.h	/^extern char * strtok(char *,const char *);$/;"	p	signature:(char *,const char *)
+strtok	lib/string.c	/^char * strtok(char * s,const char * ct)$/;"	f	signature:(char * s,const char * ct)
+switch_to	include/system.h	180;"	d
+swp_is_buggy	include/system.h	338;"	d
+t_nand_chip	nand.c	/^}t_nand_chip;$/;"	t	typeref:struct:__anon3	file:
+tas	include/system.h	99;"	d
+task_running	include/system.h	160;"	d
+task_running	include/system.h	170;"	d
+toascii	include/ctype.h	32;"	d
+tolower	include/ctype.h	48;"	d
+toupper	include/ctype.h	49;"	d
+uart0_init	serial.c	/^void uart0_init(void)$/;"	f	signature:(void)
+uart0_init	serial.h	/^void uart0_init(void);$/;"	p	signature:(void)
+umul_ppmm	lib/muldi3.c	34;"	d	file:
+unlikely	lib/vsprintf.c	29;"	d	file:
+va_arg	lib/vsprintf.h	29;"	d
+va_end	lib/vsprintf.h	30;"	d
+va_list	include/stdio.h	/^typedef char *va_list;$/;"	t
+va_list	lib/vsprintf.h	/^typedef char *va_list;$/;"	t
+va_start	lib/vsprintf.h	31;"	d
+vectors_high	include/system.h	131;"	d
+vectors_high	include/system.h	133;"	d
+vscnprintf	lib/vsprintf.c	/^int vscnprintf(char *buf, size_t size, const char *fmt, va_list args)$/;"	f	signature:(char *buf, size_t size, const char *fmt, va_list args)
+vsnprintf	include/stdio.h	/^extern int vsnprintf(char *buf, size_t size, const char *fmt, va_list args);$/;"	p	signature:(char *buf, size_t size, const char *fmt, va_list args)
+vsnprintf	lib/vsprintf.c	/^int vsnprintf(char *buf, size_t size, const char *fmt, va_list args)$/;"	f	signature:(char *buf, size_t size, const char *fmt, va_list args)
+vsnprintf	lib/vsprintf.h	/^int vsnprintf(char *buf, size_t size, const char *fmt, va_list args);$/;"	p	signature:(char *buf, size_t size, const char *fmt, va_list args)
+vsprintf	include/stdio.h	/^extern int vsprintf(char *buf, const char *fmt, va_list args);$/;"	p	signature:(char *buf, const char *fmt, va_list args)
+vsprintf	lib/vsprintf.c	/^int vsprintf(char *buf, const char *fmt, va_list args)$/;"	f	signature:(char *buf, const char *fmt, va_list args)
+vsprintf	lib/vsprintf.h	/^int vsprintf(char *buf, const char *fmt, va_list args);$/;"	p	signature:(char *buf, const char *fmt, va_list args)
+vsscanf	include/stdio.h	/^extern int vsscanf(const char * buf, const char * fmt, va_list args);$/;"	p	signature:(const char * buf, const char * fmt, va_list args)
+vsscanf	lib/vsprintf.c	/^int vsscanf(const char * buf, const char * fmt, va_list args)$/;"	f	signature:(const char * buf, const char * fmt, va_list args)
+vsscanf	lib/vsprintf.h	/^int vsscanf(const char * buf, const char * fmt, va_list args);$/;"	p	signature:(const char * buf, const char * fmt, va_list args)
+wait_idle	nand.c	/^    void (*wait_idle)(void);$/;"	m	struct:__anon3	file:	access:public
+wait_idle	nand.c	/^static void wait_idle(void)$/;"	f	file:	signature:(void)
+wait_idle	nand.c	/^static void wait_idle(void);$/;"	p	file:	signature:(void)
+wmb	include/system.h	138;"	d
+word_type	include/gcclib.h	/^typedef          int word_type 	__attribute__ ((mode (__word__)));$/;"	t
+write_addr	nand.c	/^    void (*write_addr)(unsigned int addr);$/;"	m	struct:__anon3	file:	access:public
+write_addr	nand.c	/^static void write_addr(unsigned int addr)$/;"	f	file:	signature:(unsigned int addr)
+write_addr	nand.c	/^static void write_addr(unsigned int addr);$/;"	p	file:	signature:(unsigned int addr)
+write_cmd	nand.c	/^    void (*write_cmd)(int cmd);$/;"	m	struct:__anon3	file:	access:public
+write_cmd	nand.c	/^static void write_cmd(int cmd)$/;"	f	file:	signature:(int cmd)
+write_cmd	nand.c	/^static void write_cmd(int cmd);$/;"	p	file:	signature:(int cmd)
+xchg	include/system.h	96;"	d
+xh	lib/div64.S	/^#define xh r0$/;"	d
+xh	lib/div64.S	/^#define xh r1$/;"	d
+xl	lib/div64.S	/^#define xl r0$/;"	d
+xl	lib/div64.S	/^#define xl r1$/;"	d
+xsize	lcddrv.c	/^unsigned int xsize;$/;"	v
+yh	lib/div64.S	/^#define yh r2$/;"	d
+yh	lib/div64.S	/^#define yh r3$/;"	d
+yl	lib/div64.S	/^#define yl r2$/;"	d
+yl	lib/div64.S	/^#define yl r3$/;"	d
+ysize	lcddrv.c	/^unsigned int ysize;$/;"	v
